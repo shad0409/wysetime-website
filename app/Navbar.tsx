@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className='flex items-center justify-between h-16'>
                 <div className='flex items-center'>
                     <div className='flex-shrink-0'>
-                        <Image src={Logo} width={300} height={400} placeholder='blur' alt="logo"/>
+                        <Image src={Logo} width={150} height={250} placeholder='blur' alt="logo"/>
                     </div>
                 </div>
                 <div className='hidden md:block'>
