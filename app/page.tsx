@@ -1,32 +1,38 @@
+'use client'
 import {getProjects} from '@/sanity/sanity-utils'
 import { Image } from 'next-sanity/image';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-
-export default async function Home() {
-  const projects = await getProjects();
+export default function Home() {
 
   return (
-    <div className="max-w-5xl mx-auto text-black">
-      <h1 className='text-7xl font-extrabold'>WyseTime Technologies</h1>
+    <div>
+      <Parallax pages={5} className="animation">
+        {/* Page 1 */}
+        <ParallaxLayer offset={0} speed={0.5}>
+          <div className="animation_layer parallax" id="artback"></div>
+        </ParallaxLayer>
 
-      <h2 className='text-3xl font-bold py-10'>Test</h2>
+        {/* Page 2 */}
+        <ParallaxLayer offset={1} speed={0.5}>
+          <h1 className='text-black text-7xl font-extrabold'>WyseTime</h1>
+        </ParallaxLayer>
 
-    <div className='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-    {projects.map((project) => (
-        <div key={project._id} className='border border-grey-500 rounded-lg'>
-          {project.image && (
-            <Image
-            src={project.image}
-            alt={project.name}
-            width={250}
-            height={100}
-            className="object-cover rounded-lg border border-gray-500"
-            /> 
-          )}
-          {project.name}
-        </div>
-      ))}
-    </div>
+        {/* Page 3 */}
+        <ParallaxLayer offset={2} speed={0.5}>
+          <h1 className='text-black text-7xl font-extrabold'>Technologies</h1>
+        </ParallaxLayer>
+
+        {/* Page 4 */}
+        <ParallaxLayer offset={3} speed={0.5}>
+          <h1 className='text-black text-7xl font-extrabold'>Test</h1>
+        </ParallaxLayer>
+
+        {/* Page 5 */}
+        <ParallaxLayer offset={4} speed={0.5}>
+          <h1 className='text-black'>Test</h1>
+        </ParallaxLayer>
+      </Parallax>
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className='bg-black'>
+      <nav className='bg-gray-300'>
         <div className='max-w-10xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='flex items-center justify-between h-16'>
                 <div className='flex items-center'>
@@ -25,33 +25,33 @@ export default function Navbar() {
                 <div className='hidden md:block'>
                     <div className='ml-4 flex items-center space-x-4'>
                         <Link href="/" 
-                        className='text-white hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black hover:bg-black hover:text-white rounded-lg'>
                             Home
                         </Link>
                         <Link href="/Product" 
-                        className='text-white hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black hover:bg-black hover:text-white rounded-lg'>
                             Product
                         </Link>
                         <Link href="/Core" 
-                        className='text-white hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black hover:bg-black hover:text-white rounded-lg'>
                             Core Technologies
                         </Link>
                         <Link href="/Solution" 
-                        className='text-white hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black hover:bg-black hover:text-white rounded-lg'>
                             Solutions
                         </Link>
                         <Link href="/Case" 
-                        className='text-white hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black hover:bg-black hover:text-white rounded-lg'>
                             Case Studies
                         </Link>
                         <Link href="/Contact" 
-                        className='text-white hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black hover:bg-black hover:text-white rounded-lg'>
                             Contact Us
                         </Link>
                     </div>
                 </div>
                 <div className='md:hidden flex items-center'>
-                    <button className='inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white 
+                    <button className='inline-flex items-center justify-center p-2 rounded-md text-black hover:text-black
                     focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
                     onClick={toggleNavbar}
                     >
@@ -88,27 +88,27 @@ export default function Navbar() {
                 <div className='md:hidden'>
                     <div className='px-2 pt-2 pb-3 space-y-2 sm:px-3'>
                     <Link href="/" 
-                        className='text-white block hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black block hover:bg-black hover:text-white rounded-lg'>
                             Home
                         </Link>
                         <Link href="/Product" 
-                        className='text-white block hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black block hover:bg-black hover:text-white rounded-lg'>
                             Product
                         </Link>
                         <Link href="/Core" 
-                        className='text-white block hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black block hover:bg-black hover:text-white rounded-lg'>
                             Core Technologies
                         </Link>
                         <Link href="/Solution" 
-                        className='text-white block hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black block hover:bg-black hover:text-white rounded-lg'>
                             Solutions
                         </Link>
                         <Link href="/Case" 
-                        className='text-white block hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black block hover:bg-black hover:text-white rounded-lg'>
                             Case Studies
                         </Link>
                         <Link href="/Contact" 
-                        className='text-white block hover:bg-white hover:text-black rounded-lg'>
+                        className='text-black block hover:bg-black hover:text-white rounded-lg'>
                             Contact Us
                         </Link>
                     </div>
