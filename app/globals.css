@@ -75,7 +75,7 @@ body {
 }
 
 .animation, .animation_layer {
-	height: 1000px;
+	height: 100vh;
 }
 
 .animation {
@@ -100,15 +100,26 @@ body {
   overflow: hidden; /* Ensure content outside this layer is hidden */
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #artback {
-  position: relative; /* Ensure relative positioning for absolute pseudo-element */
+  position: relative;
   background-image: url(../public/Home_BG.png);
   background-position: center;
-  background-size: fill; /* Ensure entire image is visible within the container */
-  background-attachment: fixed; /* Image scrolls with the user */
-  filter: blur(5px); /* Adjust blur strength as needed */
-  transform: scale(1.05); /* Adjust scale for extra blur effect */
-  transition: transform 0.5s ease; /* Add smooth transition for scroll effect */
+  background-size: fill;
+  background-attachment: fixed;
+  filter: blur(5px);
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+  opacity: 1;
+  animation: fadeIn 1s ease-in; /* Apply fade-in animation */
 }
 
 #artback::before {
@@ -118,15 +129,25 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust darkness by changing alpha value */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #artback:hover {
-  transform: scale(1.05); /* Adjust scale on hover for extra effect */
+  transform: scale(1.05);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.leftAlignedImage {
+  float: left;
+  margin-right: 100px;
+}
+
+.rightAlignedImage {
+  float: right;
+  margin-right: 100px;
 }
