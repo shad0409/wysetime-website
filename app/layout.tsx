@@ -5,6 +5,9 @@ import "./globals.css";
 
 import Navbar from "./Navbar";
 
+import AnimatedBackgroundAnimateCSS from '../components/AnimateBackgroundAnimateCSS';
+import AnimatedBackgroundAnimeJS from '../components/AnimateBackgroundAnimeJS';
+
 const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
@@ -20,8 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="mx-auto">
+        <AnimatedBackgroundAnimeJS/>
         <Navbar/>
-        <main className="">{children}</main>
+        <main className="relative z-10 min-h-screen">{children}</main>
       </body>
     </html>
   );

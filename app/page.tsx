@@ -43,7 +43,9 @@ export default function Home() {
           <OurPartners/> 
           </ParallaxLayer>
         </Parallax>
-      </div>
+        
+      </div> 
     </div>
+  
   );
 }
