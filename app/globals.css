@@ -181,101 +181,200 @@ body {
 
 /* About */
 .about-container {
-  text-align: center;
-  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about-heading {
   font-size: 2.5rem;
   color: #333;
-  margin-bottom: 1rem;
-}
-
-.about-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
-.about-icon {
-  /* Placeholder for the icon dimensions */
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
 }
 
-.about-title {
+.about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-item h2 {
   font-size: 1.5rem;
   color: #333;
-  margin: 0;
+  margin: 1rem 0;
 }
 
-.about-description {
+.about-item p {
   color: #666;
   font-size: 1rem;
 }
 
+.about-intro {
+  background-color: #f5f5f5; /* Adjust the background color to match the image */
+  padding: 20px;
+  text-align: center; /* Center align the text */
+}
+
+.about-description {
+  color: #333; /* Adjust the text color to match the image */
+  padding: 0 20px; /* Add padding on the sides for better readability */
+  /* Insert other text styling here */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* Hero */
 .hero-container {
   position: relative;
-  height: 50vh; /* Adjust based on your design */
+  height: 100vh; /* Full height of the viewport */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: url('../public/Home_BG.png') no-repeat center center; /* Adjust the path as needed */
+  background-size: cover; /* Cover the full area */
+}
+
+/* Overlay with a dark or blue semi-transparent background to make text more readable */
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* You can adjust the color and opacity */
+  z-index: 1;
 }
 
 .hero-content {
-  position: absolute;
-  color: white; /* Adjust if you have different text color */
-  z-index: 10;
+  position: relative;
+  color: white; /* White color for the text */
+  z-index: 2; /* To make sure text appears above the overlay */
+  padding: 1em;
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 4rem; /* Adjust to match the design */
+  text-transform: uppercase; /* Uppercase text */
+  line-height: 1.2;
+  margin-bottom: 0.5em; /* Space between the headline and subheadline */
+  /* Apply font styling to match the image */
+  font-weight: 900;
+  letter-spacing: 2px; /* Adjust based on your design */
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem; /* Adjust to match the design */
+  margin-bottom: 2em; /* Space above the button */
 }
 
 .hero-content button {
-  padding: 10px 20px;
-  background-color: red; /* Use your brand color */
+  padding: 1em 2em;
+  background-color: #007bff; /* Adjust to match the button color in the image */
   color: white;
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 5px; /* Adjust if the button has rounded corners */
   transition: background-color 0.3s ease;
+  text-transform: uppercase; /* Uppercase button text */
+  font-weight: bold;
 }
 
 .hero-content button:hover {
-  background-color: darkred; /* Darken on hover */
+  background-color: #0056b3; /* A darker shade when hovered */
+}
+
+.hero-button-link {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #d9534f; /* Adjust color as needed */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-button-link:hover {
+  background-color: #c9302c; /* Darken on hover */
+}
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    margin-right: 5%;
+    max-width: 60%;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }
 
 /* Services */
 .services-container {
-  text-align: center;
-  margin: 2rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .service {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjust based on the image layout */
   align-items: center;
-  justify-content: center;
+  gap: 2rem;
   margin: 2rem 0;
 }
 
 .service-image {
-  margin-right: 2rem;
+  width: 100%; /* This will ensure the image takes the full width of the grid column */
 }
 
 .service-content h3 {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Updated size */
   color: #333;
   margin: 0.5rem 0;
 }
@@ -284,15 +383,20 @@ body {
   color: #666;
 }
 
+h2 {
+  font-size: 3rem; /* Larger title size */
+  margin-bottom: 1rem; /* Add some space below the title */
+}
+
 @media (max-width: 768px) {
   .service {
-    flex-direction: column;
-    text-align: left;
+    grid-template-columns: 1fr;
   }
 
   .service-image {
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin: 0;
+    width: 80%;
+    justify-self: center; /* Center the image within the grid on small screens */
   }
 }
 
@@ -374,3 +478,14 @@ body {
     transform: translateX(-50%); /* Moves the slider to show the duplicated partners */
   }
 }
+
+/* AnimeJS */
+.shape {
+  /* Example style for moving circles */
+  width: 20px; /* Smaller size */
+  height: 20px; /* Smaller size */
+  background-color: #fff;
+  border-radius: 50%; /* Make it round */
+  position: absolute; /* Allows for movement with anime.js */
+}
+

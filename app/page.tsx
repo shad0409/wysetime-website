@@ -22,26 +22,27 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Parallax pages={5}>
+        <Parallax pages={4}>
           <ParallaxLayer speed={0.5}>
           <HeroWyseTime/> 
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1}>
+          <ParallaxLayer offset={1} speed={0.5}>
           <AboutWyseTime/> 
           </ParallaxLayer>
           
-          <ParallaxLayer offset={2}>
+          <ParallaxLayer offset={2} speed={0.5}>
           <ServicesWyseTime/> 
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3}>
+          <ParallaxLayer offset={3} speed={0.5}>
           <QuoteComponent quotes={quotes}/> 
+          <OurPartners/>
           </ParallaxLayer>
-
-          <ParallaxLayer offset={4}>
+{/* 
+          <ParallaxLayer offset={3.5} speed={0.5}>
           <OurPartners/> 
-          </ParallaxLayer>
+          </ParallaxLayer> */}
         </Parallax>
         
       </div> 

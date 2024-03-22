@@ -1,37 +1,61 @@
 import React from 'react';
-import Story from '../../public/OurStory.png'
 import Image from 'next/image';
+
+import StoryIcon from '../../public/OurStory.png';
+import VisionIcon from '../../public/Vision.png';
+import TechIcon from '../../public/Technology.png';
 
 const AboutWyseTime = () => {
   return (
     <div className="about-container">
-      <h1 className="about-heading">About WyseTime</h1>
-      <div className="about-section">
-      <Image src={Story} height={100} width={50} alt="Empower Your Business" objectFit='cover' />
-        <div>
-          <h2 className="about-title">Our Story</h2>
-          <p className="about-description">
-            WyseTime brings e-commerce style analytics to your physical locations. Improve your business
-            efficiency by understanding your visitor activity and receiving automated recommendations.
-          </p>
-        </div>
+      <div className="about-intro">
+        <h1 className="about-heading">About WyseTime Technologies</h1>
+        <p className="about-description">
+        WyseTime Technologies is an innovative tech enterprise nestled in the vibrant city of Penang, 
+        Malaysia, established by a cohort of visionary technology aficionados. Our inception was driven by the urgent demand for advanced AI Vision solutions, 
+        critical for the transformation and enhancement of various sectors through insightful video analytics. 
+        Specializing in the development of AI-driven applications, we at WyseTime Technologies excel in crafting tailor-made solutions 
+        that span across diverse domains such as traffic management, retail analytics, and beyond.
+        <p className='py-10'>
+        Leveraging our deep-rooted expertise in AI and machine learning technologies, 
+        we engineer cutting-edge digital systems that provide real-time video analysis, 
+        offering invaluable insights for traffic control, customer behavior tracking in retail environments, 
+        and a plethora of other applications. Our commitment to deeply understanding our client challenges and distinct requirements, 
+        combined with our prowess in AI software development and integration with sophisticated hardware platforms, 
+        positions WyseTime Technologies at the forefront of delivering unparalleled solutions and services.
+        </p>
+        <p>
+        Our guiding principle revolves around augmenting our clients operational efficiency, 
+        decision-making processes, and strategic planning through the power of AI Vision. 
+        By enabling enhanced monitoring, analytics, and predictive capabilities, we empower our clients to achieve optimal outcomes, 
+        ensuring their success in the modern digital landscape.
+        </p>
+        </p>
       </div>
-      <div className="about-section">
-        <img src="path-to-your-logo.svg" alt="Vision Icon" className="about-icon" />
-        <div>
-          <h2 className="about-title">Our Vision</h2>
-          <p className="about-description">
-            WyseTime combines the transformative powers of Big Data and the Internet of Things (IoT). By using video analytic technology, we find a winning formula for retail analytics when people counting data is used for operational and strategic decisions.
-          </p>
+
+      <div className="about-grid py-20">
+        <div className="about-item">
+          <Image src={StoryIcon} height={100} width={100} alt="Our Story" objectFit='contain' />
+          <h2>Our Story</h2>
+          <p>WyseTime brings e-commerce style analytics to your physical locations.
+            Improve your business efficiency by understanding your visitoractivity and receiving automated recommendations</p>
         </div>
-      </div>
-      <div className="about-section">
-        <img src="path-to-your-logo.svg" alt="Technology Icon" className="about-icon" />
-        <div>
-          <h2 className="about-title">Technology</h2>
-          <p className="about-description">
-            WyseTime help brick-and-mortar businesses in creating superior customer experience. Through footfall analytics, customer profile generation, personalized CRM engagement and in-depth business insights.
-          </p>
+        <div className="about-item">
+          <Image src={VisionIcon} height={100} width={100} alt="Our Vision" objectFit='contain' />
+          <h2>Our Vision</h2>
+          <p>WyseTime help brick-and-mortar businesses in creating 
+            superior customer experience. Through footfall analytics,
+            customer profile generation, personalized CRM 
+            engagement and in-depth business insights</p>
+        </div>
+        <div className="about-item">
+          <Image src={TechIcon} height={100} width={100} alt="Technology" objectFit='contain' />
+          <h2>Technology</h2>
+          <p>WyseTime combines the transformative powers of 
+            Big Data and the Internet of Things (IoT). 
+            By using video analytic technology, 
+            we find a winning formula for retail analytics when people 
+            counting data is used for operational and strategic decisions.</p>
         </div>
       </div>
     </div>

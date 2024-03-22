@@ -9,16 +9,24 @@ const AnimatedBackgroundWithAnimeJS: React.FC = () => {
       anime({
         targets: animationRef.current.querySelectorAll('.shape'),
         translateY: [
-          { value: 200, duration: 5000 },
-          { value: 0, duration: 5000 }
+          { value: 200, duration: 2500 }, // Reduced duration for faster movement
+          { value: 0, duration: 2500 }
         ],
         translateX: [
-          { value: anime.random(-100, 100), duration: 5000, delay: anime.stagger(100) },
-          { value: anime.random(-100, 100), duration: 5000, delay: anime.stagger(100) }
+          {
+            value: anime.random(-150, 150),
+            duration: 2500, // Reduced duration for faster movement
+            delay: anime.stagger(50)
+          },
+          {
+            value: anime.random(-150, 150),
+            duration: 2500, // Reduced duration for faster movement
+            delay: anime.stagger(50)
+          }
         ],
         easing: 'easeInOutSine',
         loop: true,
-        delay: anime.stagger(200, { start: 1000 }),
+        delay: anime.stagger(50, { start: 500 }), // Reduced start delay
         autoplay: true
       });
     }
@@ -26,8 +34,8 @@ const AnimatedBackgroundWithAnimeJS: React.FC = () => {
 
   return (
     <div ref={animationRef} className="fixed top-0 left-0 w-full h-full z-[-1]">
-    {[...Array(10)].map((_, i) => (
-      <div key={i} className="shape bg-white p-4 rounded-full shadow-lg absolute" style={{ top: `${anime.random(0, 100)}%`, left: `${anime.random(0, 100)}%` }}>
+    {[...Array(100)].map((_, i) => ( // Increase the number of shapes
+      <div key={i} className="shape bg-white p-2 rounded-full shadow-lg absolute" style={{ top: `${anime.random(0, 100)}%`, left: `${anime.random(0, 100)}%` }}> {/* Make circles smaller */}
         {/* Additional content */}
       </div>
     ))}
