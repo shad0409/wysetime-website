@@ -1,3 +1,4 @@
+// Adjusted JSX component structure
 import React from 'react';
 import Image from 'next/image';
 
@@ -7,10 +8,10 @@ import TechIcon from '../../public/Technology.png';
 
 const AboutWyseTime = () => {
   return (
-    <div className="about-container">
-      <div className="about-intro">
-        <h1 className="about-heading">About WyseTime Technologies</h1>
-        <p className="about-description">
+    <>
+      <div className="about-description-container">
+      <h1 className='py-10 text-black text-center'>About WyseTime Technologies</h1>
+      <p className="about-description">
         WyseTime Technologies is an innovative tech enterprise nestled in the vibrant city of Penang, 
         Malaysia, established by a cohort of visionary technology aficionados. Our inception was driven by the urgent demand for advanced AI Vision solutions, 
         critical for the transformation and enhancement of various sectors through insightful video analytics. 
@@ -33,32 +34,34 @@ const AboutWyseTime = () => {
         </p>
       </div>
 
-      <div className="about-grid py-20">
-        <div className="about-item">
-          <Image src={StoryIcon} height={100} width={100} alt="Our Story" objectFit='contain' />
-          <h2>Our Story</h2>
-          <p>WyseTime brings e-commerce style analytics to your physical locations.
+      <div className="about-items-container">
+        <div className='about-item-container'>
+            <Image src={StoryIcon} height={100} width={100} alt="Our Story" objectFit='contain' />
+            <h2>Our Story</h2>
+            <p>WyseTime brings e-commerce style analytics to your physical locations.
             Improve your business efficiency by understanding your visitoractivity and receiving automated recommendations</p>
         </div>
-        <div className="about-item">
+
+        <div className="about-item-container">
           <Image src={VisionIcon} height={100} width={100} alt="Our Vision" objectFit='contain' />
           <h2>Our Vision</h2>
           <p>WyseTime help brick-and-mortar businesses in creating 
-            superior customer experience. Through footfall analytics,
-            customer profile generation, personalized CRM 
-            engagement and in-depth business insights</p>
+              superior customer experience. Through footfall analytics,
+              customer profile generation, personalized CRM 
+              engagement and in-depth business insights</p>
         </div>
-        <div className="about-item">
+
+        <div className="about-item-container">
           <Image src={TechIcon} height={100} width={100} alt="Technology" objectFit='contain' />
           <h2>Technology</h2>
           <p>WyseTime combines the transformative powers of 
-            Big Data and the Internet of Things (IoT). 
-            By using video analytic technology, 
-            we find a winning formula for retail analytics when people 
-            counting data is used for operational and strategic decisions.</p>
+              Big Data and the Internet of Things (IoT). 
+              By using video analytic technology, 
+              we find a winning formula for retail analytics when people 
+              counting data is used for operational and strategic decisions.</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

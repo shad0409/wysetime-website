@@ -1,9 +1,10 @@
 import { Partner } from '../Partners'
+import logo from '../../../public/WyseLogo.png'
 
 export const partners: Partner[] = [
     // Example partner objects
-    { id: 1, name: 'Partner One', logo: 'path-to-logo-1.png' },
-    { id: 2, name: 'Partner Two', logo: 'path-to-logo-2.png' },
-    { id: 3, name: 'Partner Three', logo: 'path-to-logo-3.png' },
+    { id: 1, name: 'Partner One', logo },
+    { id: 2, name: 'Partner Two', logo },
+    { id: 3, name: 'Partner Three', logo },
     // ...more partners
   ];

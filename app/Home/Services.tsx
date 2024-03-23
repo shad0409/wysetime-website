@@ -12,13 +12,14 @@ const ServicesWyseTime: React.FC = () => {
         image={serviceImage1}
         title="Comprehensive In-store Insights"
         description="Excerpt of text that explains service 1 in detail."
+        reverse={true}
       />
       <Service 
         image={serviceImage2}
         title="Video Analytic Technology"
         description="Excerpt of text that explains service 2 in detail."
+        reverse={false}
       />
-      {/* Add more <Service /> components as needed */}
     </div>
   );
 };
