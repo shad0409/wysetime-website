@@ -13,38 +13,30 @@ import AboutWyseTime from './Home/About';
 import ServicesWyseTime from './Home/Services';
 
 import QuoteComponent from './Home/Quote';
-import quotes from './Home/QuoteTypes/quotes';
+import quotes from './Home/types/quotes';
 
 import OurPartners from './Home/Partners';
+import Footer from './Footer';
+import { partners } from './Home/types/partner';
 
 export default function Home() {
 
   return (
     <div>
+      <HeroWyseTime/>
       <div>
-        <Parallax pages={4}>
-          <ParallaxLayer speed={0.5}>
-          <HeroWyseTime/> 
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={1} speed={0.5}>
-          <AboutWyseTime/> 
-          </ParallaxLayer>
-          
-          <ParallaxLayer offset={2} speed={0.5}>
+        <div className='py-10'>
+        <AboutWyseTime/>
+        </div>
+          <div className='py-10'>
           <ServicesWyseTime/> 
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={3} speed={0.5}>
-          <QuoteComponent quotes={quotes}/> 
-          <OurPartners/>
-          </ParallaxLayer>
-{/* 
-          <ParallaxLayer offset={3.5} speed={0.5}>
-          <OurPartners/> 
-          </ParallaxLayer> */}
-        </Parallax>
-        
+          </div>
+            <div className='py-10'>
+            <QuoteComponent quotes={quotes}/> 
+            </div>
+              <div className='py-10'>
+              <OurPartners partners={partners}/>
+              </div>
       </div> 
     </div>
   

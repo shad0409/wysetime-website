@@ -7,6 +7,8 @@ import Navbar from "./Navbar";
 
 import AnimatedBackgroundAnimateCSS from '../components/AnimateBackgroundAnimateCSS';
 import AnimatedBackgroundAnimeJS from '../components/AnimateBackgroundAnimeJS';
+import Footer from "./Footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,7 @@ export default function RootLayout({
       <body className="mx-auto">
         <AnimatedBackgroundAnimeJS/>
         <Navbar/>
-        <main className="relative z-10 min-h-screen">{children}</main>
+        <main className="relative z-10 min-h-screen">{children}<Footer/></main>
       </body>
     </html>
   );

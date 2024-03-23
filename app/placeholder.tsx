@@ -52,3 +52,27 @@
 //   </ParallaxLayer>
 // </Parallax> */}
 // </div> */}
+
+        {/* <Parallax pages={4}>
+          <ParallaxLayer speed={0.5}>
+          <HeroWyseTime/> 
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={1} speed={0.5}>
+          <AboutWyseTime/> 
+          </ParallaxLayer>
+          
+          <ParallaxLayer offset={2} speed={0.5}>
+          <ServicesWyseTime/> 
+          <QuoteComponent quotes={quotes}/> 
+          <OurPartners partners={partners}/>
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={3.5} speed={0.5}>
+          <Footer/>
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={3.5} speed={0.5}>
+          <OurPartners/> 
+          </ParallaxLayer>
+        </Parallax> */}

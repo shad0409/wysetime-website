@@ -1,21 +1,19 @@
 import React from 'react';
+import { partners } from './types/partner';
 
-interface Partner {
+export interface Partner {
   id: number;
   name: string;
   logo: string; // path to the logo image
 }
 
-const partners: Partner[] = [
-  // Example partner objects
-  { id: 1, name: 'Partner One', logo: 'path-to-logo-1.png' },
-  { id: 2, name: 'Partner Two', logo: 'path-to-logo-2.png' },
-  // ...more partners
-];
+interface PartnerComponentProps {
+  partners: Partner[];
+}
 
-const OurPartners: React.FC = () => {
+const OurPartners: React.FC<PartnerComponentProps> = () => {
   return (
-    <div className="partners-container">
+    <div className="partners-container py-20">
       <h2>Our Partners</h2>
       <div className="slider">
         {partners.concat(partners).map((partner) => ( // duplicate the partners for a seamless transition

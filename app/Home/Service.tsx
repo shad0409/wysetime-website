@@ -10,7 +10,7 @@ interface ServiceProps {
 const Service: React.FC<ServiceProps> = ({ image, title, description }) => (
   <div className="service">
     <div className="service-image">
-      <Image src={image} alt={title} width={500} height={300} objectFit='contain' />
+      <Image src={image} alt={title} width={350} height={250} objectFit='contain' />
     </div>
     <div className="service-content">
       <h3>{title}</h3>
