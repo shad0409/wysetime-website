@@ -23,7 +23,10 @@ export default function Home() {
 
   return (
     <div>
-      <HeroWyseTime/>
+      <header>
+        <HeroWyseTime/>
+      </header>
+      <section>
       <div>
         <div className='py-10'>
         <AboutWyseTime/>
@@ -34,11 +37,15 @@ export default function Home() {
             <div className='py-10'>
             <QuoteComponent quotes={quotes}/> 
             </div>
-              <div className='py-10'>
+              <div className=''>
               <OurPartners partners={partners}/>
               </div>
       </div> 
+      </section>
+      <footer className='py-10'>
+        <Footer/>
+      </footer>
     </div>
-  
+
   );
 }

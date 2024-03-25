@@ -7,7 +7,7 @@ function Footer() {
 	return (
 		<>
 			<div className="bg-gray-300 h-1/2 w-full flex md:flex-row flex-col justify-around items-start text-center">
-				<div className="p-5 ">
+				<div className="p-3">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
 							Wyse<span className="text-red-600">Time</span>
@@ -24,7 +24,7 @@ function Footer() {
 						</a>
 						</div>
 					</ul>
-					<div className="text-gray-800 pb-6">
+					<div className="text-gray-800">
 						<p>
 							12 (First Floor), Jalan Lembah Permai 1, Taman Lembah Permai, 14000 Bukit Mertajam, Pulau Pinang
 						</p>

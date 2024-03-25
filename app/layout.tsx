@@ -25,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="mx-auto">
-        <AnimatedBackgroundAnimeJS/>
-        <Navbar/>
-        <main className="relative z-10 min-h-screen">{children}<Footer/></main>
+      <Navbar/>
+      <AnimatedBackgroundAnimeJS/>
+        <div className="wrapper">
+        <main className="relative z-10 min-h-screen">{children}</main>
+        </div>
       </body>
     </html>
   );
