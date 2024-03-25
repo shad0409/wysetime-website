@@ -14,6 +14,9 @@ module.exports = {
         'gradient-start': '#ff0000', // red
         'gradient-end': '#000000', // black
       },
+      fontFamily: {
+        'kanit': ['Kanit', 'sans-serif'],
+      },
     },
   },
   plugins: [],

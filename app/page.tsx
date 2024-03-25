@@ -1,8 +1,8 @@
 'use client'
 import {getProjects} from '@/sanity/sanity-utils'
+import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import "./globals.css";
 
 // Individual Components
@@ -20,32 +20,34 @@ import Footer from './Footer';
 import { partners } from './Home/types/partner';
 
 export default function Home() {
+  const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [quoteRef, quoteInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [partnersRef, partnersInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <div>
-      <header>
-        <HeroWyseTime/>
+    <>
+      <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
+        <HeroWyseTime />
       </header>
       <section>
-      <div>
-        <div className='py-10'>
-        <AboutWyseTime/>
+        <div className={`py-10 ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
+          <AboutWyseTime />
         </div>
-          <div className='py-10'>
-          <ServicesWyseTime/> 
-          </div>
-            <div className='py-10'>
-            <QuoteComponent quotes={quotes}/> 
-            </div>
-              <div className=''>
-              <OurPartners partners={partners}/>
-              </div>
-      </div> 
+        <div className={`py-10 ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
+          <ServicesWyseTime />
+        </div>
+        <div className={`py-10 ${quoteInView ? 'fadeInUp' : ''}`} ref={quoteRef}>
+          <QuoteComponent quotes={quotes} />
+        </div>
+        <div className={`${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+          <OurPartners partners={partners} />
+        </div>
       </section>
       <footer className='py-10'>
-        <Footer/>
+        <Footer />
       </footer>
-    </div>
-
+    </>
   );
 }

@@ -5,7 +5,6 @@ import "./globals.css";
 
 import Navbar from "./Navbar";
 
-import AnimatedBackgroundAnimateCSS from '../components/AnimateBackgroundAnimateCSS';
 import AnimatedBackgroundAnimeJS from '../components/AnimateBackgroundAnimeJS';
 import Footer from "./Footer";
 
