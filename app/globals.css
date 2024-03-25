@@ -3,29 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-color: #2b2024;
+  --background-start-color: #2b2024; /* Adjusted for clarity */
+  --background-end-color: #2b2024;   /* Adjusted for clarity */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 220, 220, 220;
-    --background-end-rgb: 220, 220, 220;
+    --foreground-color: #2b2024; /* Example adjustment for contrast */
+    --background-start-color: #cb3737; /* Ensure this is visibly different for dark mode */
+    --background-end-color: #2b2024;   /* Adjust if needed */
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--foreground-color);
   background: linear-gradient(
       to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    overflow: hidden;
+      var(--background-start-color),
+      var(--background-end-color)
+    );
+  overflow: hidden;
 }
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
@@ -106,15 +106,6 @@ body {
   width: 100%;
   height: 50%;
   overflow: hidden; /* Ensure content outside this layer is hidden */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 #artback {
@@ -480,7 +471,7 @@ body {
   position: absolute; /* Allows for movement with anime.js */
 }
 
-/* Parallax */
+/* Animation */
 section {
   font-size: 1.3rem;
   padding: 2rem;
@@ -491,4 +482,8 @@ section {
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
