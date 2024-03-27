@@ -103,7 +103,7 @@ body {
 
 /* About Section Styling */
 .about-description-container {
-  max-width: 1800px;
+  max-width: 1900px;
   margin: 20px auto;
   padding: 20px;
   background: #e3e3e3;
@@ -111,14 +111,25 @@ body {
   text-align: center;
 }
 
+.about-description-container h1 {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.about-description-container p {
+  font-weight: 100;
+  font-size: large;
+}
+
+
 /* Parent container for the items, displayed as flex */
 .about-items-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 60px;
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1900px;
 }
 
 /* Individual item styling */
@@ -132,6 +143,16 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.about-items-container h2 {
+  font-weight: 400;
+  font-size: larger;
+}
+
+.about-items-container p {
+  font-weight: 100;
+  font-size: large;
 }
 
 /* Responsive adjustments */
@@ -259,6 +280,10 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.services-container h2 {
+  font-weight: 600;
+}
+
 .service-heading {
   font-size: 2.5rem;
   color: #333;
@@ -270,8 +295,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr; /* Text on the left, image on the right */
   align-items: center;
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: 2rem; /* Reduced gap from 2rem to 1rem */
+  margin: 1rem 0; /* Reduced margin */
 }
 
 .service:not(.reverse) {
@@ -279,7 +304,7 @@ body {
 }
 
 .service.reverse {
-  grid-template-columns: 2fr 1fr; 
+  grid-template-columns: 1fr 1fr; 
 }
 
 .service-image {
@@ -287,7 +312,15 @@ body {
 }
 
 .service-content {
-  padding-right: 1rem; 
+  padding-right: 0.5rem; /* Reduced padding right from 1rem to 0.5rem */
+}
+
+.service-content h3 {
+  font-weight: 400;
+}
+
+.service-content p {
+  font-weight: 100;
 }
 
 @media (max-width: 768px) {
@@ -336,9 +369,14 @@ body {
   display: inline-block;
 }
 
-.quoted-from {
-  font-size: 1.5rem;
-  font-style: italic;
+.quote-content h2 {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.quote-content p {
+  font-weight: 400;
+  font-size: large;
 }
 
 .quote {
@@ -355,7 +393,7 @@ body {
 .partners-container {
   max-width: 1900px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,6 +401,11 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+}
+
+.partners-container h2 {
+  font-weight: 600;
+  font-size: larger;
 }
 
 .slider {
@@ -394,18 +437,21 @@ body {
 
 /* AnimeJS */
 .shape {
-  /* Example style for moving circles */
-  width: 20px; /* Smaller size */
-  height: 20px; /* Smaller size */
-  background-color: #fff;
-  border-radius: 50%; /* Make it round */
+  background-color: #cb3737;
   position: absolute; /* Allows for movement with anime.js */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Shadow for depth */
+}
+
+.line {
+  background-color: #cb3737;
+  position: absolute; /* Necessary for animation movement */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Optional: Adds a subtle shadow to lines */
+  opacity: 0.5;
 }
 
 /* Animation */
 section {
   font-size: 1.3rem;
-  padding: 2rem;
 }
 
 .wrapper {
@@ -413,6 +459,8 @@ section {
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
+  position: relative;
+  z-index: 0;
 }
 
 html {

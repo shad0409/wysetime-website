@@ -6,8 +6,8 @@ import "./globals.css";
 import Navbar from "./Navbar";
 
 import AnimatedBackgroundAnimeJS from '../components/AnimateBackgroundAnimeJS';
+import ParticlesContainer from "@/components/ParticlesContainer";
 import Footer from "./Footer";
-
 
 const inter = Inter({ subsets: ["latin"] });
 

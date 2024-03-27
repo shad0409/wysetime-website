@@ -10,7 +10,7 @@ const AboutWyseTime = () => {
   return (
     <>
       <div className="about-description-container">
-      <h1 className='py-10 text-black text-center'>About WyseTime Technologies</h1>
+      <h1 className='text-black text-center py-5'>About WyseTime Technologies</h1>
       <p className="about-description">
         WyseTime Technologies is an innovative tech enterprise nestled in the vibrant city of Penang, 
         Malaysia, established by a cohort of visionary technology aficionados. Our inception was driven by the urgent demand for advanced AI Vision solutions, 

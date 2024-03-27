@@ -1,3 +1,5 @@
+// Services.tsx
+
 import React from 'react';
 import Service from './Service';
 
@@ -12,13 +14,13 @@ const ServicesWyseTime: React.FC = () => {
         image={serviceImage1}
         title="Comprehensive In-store Insights"
         description="Excerpt of text that explains service 1 in detail."
-        reverse={true}
+        reverse={true} // text on the left, image on the right
       />
       <Service 
         image={serviceImage2}
         title="Video Analytic Technology"
         description="Excerpt of text that explains service 2 in detail."
-        reverse={false}
+        reverse={false} // image on the left, text on the right
       />
     </div>
   );

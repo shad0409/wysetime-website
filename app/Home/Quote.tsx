@@ -32,9 +32,8 @@ const QuoteComponent: React.FC<QuoteComponentProps> = ({ quotes }) => {
         <button onClick={nextQuote}>→</button>
       </div>
       <div className="quote-content">
-        <p className="quoted-from">Quoted from</p>
         <p className="quote">{quotes[currentQuoteIndex].text}</p>
-        <p className="quote-source">{quotes[currentQuoteIndex].source}</p>
+        <h2 className="quote-source">{quotes[currentQuoteIndex].source}</h2>
       </div>
     </div>
   );

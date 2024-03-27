@@ -13,7 +13,7 @@ const Service: React.FC<ServiceProps> = ({ image, title, description, reverse })
     {reverse ? (
       <>
         <div className="service-image">
-          <Image src={image} alt={title} width={350} height={250} objectFit='contain' />
+          <Image src={image} alt={title} width={250} height={250} objectFit='contain' />
         </div>
         <div className="service-content text-black">
           <h3>{title}</h3>
@@ -27,7 +27,7 @@ const Service: React.FC<ServiceProps> = ({ image, title, description, reverse })
           <p>{description}</p>
         </div>
         <div className="service-image">
-          <Image src={image} alt={title} width={350} height={250} objectFit='contain' />
+          <Image src={image} alt={title} width={250} height={250} objectFit='contain' />
         </div>
       </>
     )}
