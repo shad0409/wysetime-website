@@ -28,13 +28,13 @@ function Footer() {
 						<p>
 							12 (First Floor), Jalan Lembah Permai 1, Taman Lembah Permai, 14000 Bukit Mertajam, Pulau Pinang
 						</p>
+						<p>
+						© 2024 WyseTime Technologies All rights reserved
+						</p>
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-300">
-				<h1 className=" text-gray-800 font-semibold">
-					© 2024 WyseTime Technologies All rights reserved
-				</h1>
+			<div className="flex flex-col justify-center items-center text-center  p-6 bg-gray-300">
 			</div>
 		</>
 	);

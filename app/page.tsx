@@ -32,20 +32,20 @@ export default function Home() {
         <HeroWyseTime />
       </header>
       <section>
-        <div className={`py-10 ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
+        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
           <AboutWyseTime />
         </div>
-        <div className={`py-10 ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
+        <div className={` py-5 ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
           <ServicesWyseTime />
         </div>
-        <div className={`py-10 ${quoteInView ? 'fadeInUp' : ''}`} ref={quoteRef}>
+        <div className={` ${quoteInView ? 'fadeInUp' : ''}`} ref={quoteRef}>
           <QuoteComponent quotes={quotes} />
         </div>
-        <div className={`${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` py-5 ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
           <OurPartners partners={partners} />
         </div>
       </section>
-      <footer className='py-10'>
+      <footer className=''>
         <Footer />
       </footer>
     </>
