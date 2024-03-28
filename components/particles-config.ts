@@ -491,12 +491,12 @@ const particlesConfig = {
     links: {
       blink: false,
       color: {
-        value: "random"
+        value: "#ff0000" // Setting links color to red
       },
       consent: false,
       distance: 100,
       enable: true,
-      frequency: 1,
+      frequency: 1.2, // Slightly increased from 1 to 1.2 to make links appear more frequently
       opacity: 1,
       shadow: {
         blur: 5,
