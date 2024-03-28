@@ -111,24 +111,24 @@ body {
 
 /* About Section Styling */
 .about-description-container, .about-item-container {
-  background: rgba(227, 227, 227, 0.5); /* Adjusted for less opacity */
+  background: rgba(227, 227, 227, 0.2); /* Adjusted for less opacity */
 }
 
 .about-description-container {
   max-width: 1900px;
-  margin: 20px auto;
   padding: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  height: 60vh; 
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  height: 55vh; 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .about-description-container h1 {
   font-weight: 600;
   font-size: xxx-large;
+  margin-top: -50px;
 }
 
 .about-description-container p {
@@ -140,9 +140,10 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 10px;
   margin: 0 auto;
   max-width: 1900px;
+  padding-top: 5px;
 }
 
 .about-items-container h2 {
@@ -168,7 +169,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive adjustments remain the same */
@@ -194,7 +195,7 @@ body {
   text-align: center;
   background: url('../public/Home_BG.png') no-repeat center center; /* Adjust the path as needed */
   background-size: cover; /* Cover the full area */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19); /* Larger shadow */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1); /* Larger shadow */
 }
 
 /* Overlay with a dark or blue semi-transparent background to make text more readable */
@@ -294,7 +295,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
   justify-content: center;
 }
 
@@ -361,7 +362,7 @@ body {
   padding: 8rem;
   position: relative;
   text-align: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .quote-navigation {
@@ -417,7 +418,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: rgba(227, 227, 227, 0.5); /* Adjusted for less opacity */
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
 }

@@ -35,13 +35,13 @@ export default function Home() {
         <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
           <AboutWyseTime />
         </div>
-        <div className={` py-5 ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
+        <div className={` py-3 ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
           <ServicesWyseTime />
         </div>
         <div className={` ${quoteInView ? 'fadeInUp' : ''}`} ref={quoteRef}>
           <QuoteComponent quotes={quotes} />
         </div>
-        <div className={` py-5 ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` py-1 ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
           <OurPartners partners={partners} />
         </div>
       </section>

@@ -10,13 +10,15 @@ const AboutWyseTime = () => {
   return (
     <>
       <div className="about-description-container">
-      <h1 className='text-black text-center py-5'>About WyseTime</h1>
-      <p className="about-description">
+      <h1 className='text-black text-center py-5'>About <span className="text-red-600">WyseTime</span></h1>
+      <div className="about-description">
+        <p>
         WyseTime Technologies is an innovative tech enterprise nestled in the vibrant city of Penang, 
         Malaysia, established by a cohort of visionary technology aficionados. Our inception was driven by the urgent demand for advanced AI Vision solutions, 
         critical for the transformation and enhancement of various sectors through insightful video analytics. 
         Specializing in the development of AI-driven applications, we at WyseTime Technologies excel in crafting tailor-made solutions 
         that span across diverse domains such as traffic management, retail analytics, and beyond.
+        </p>
         <p className='py-10'>
         Leveraging our deep-rooted expertise in AI and machine learning technologies, 
         we engineer cutting-edge digital systems that provide real-time video analysis, 
@@ -31,7 +33,7 @@ const AboutWyseTime = () => {
         By enabling enhanced monitoring, analytics, and predictive capabilities, we empower our clients to achieve optimal outcomes, 
         ensuring their success in the modern digital landscape.
         </p>
-        </p>
+        </div>
       </div>
 
       <div className="about-items-container">

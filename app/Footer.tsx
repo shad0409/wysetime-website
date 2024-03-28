@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
@@ -17,7 +17,7 @@ function Footer() {
 							<FaInstagram />
 						</a>
 						<a href="https://www.facebook.com/wysetime/?locale=eo_EO" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer hover:text-blue-600">
-							<FaTwitter />
+							<FaFacebook />
 						</a>
 						<a href="https://www.linkedin.com/company/wysetime/about/" target="_blank" rel="noopener noreferrer" className="text-2xl cursor-pointer hover:text-blue-600">
 							<FaLinkedin />

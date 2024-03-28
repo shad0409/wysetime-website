@@ -9,7 +9,7 @@ import serviceImage2 from '../../public/Services_2.jpeg'; // Ensure the correct 
 const ServicesWyseTime: React.FC = () => {
   return (
     <div className="services-container">
-      <h2 className='service-heading'>Our Services</h2>
+      <h2 className='service-heading'>Our <span className="text-red-600">Services</span></h2>
       <Service 
         image={serviceImage1}
         title="Comprehensive In-store Insights"

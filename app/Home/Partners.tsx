@@ -17,7 +17,7 @@ interface PartnerComponentProps {
 const OurPartners: React.FC<PartnerComponentProps> = () => {
   return (
     <div className="partners-container text-black">
-      <h2>Our Partners</h2>
+      <h2>Our <span className="text-red-600">Partners</span></h2>
       <div className="slider">
         {partners.concat(partners).map((partner) => ( // duplicate the partners for a seamless transition
           <div className="partner" key={partner.id}>
