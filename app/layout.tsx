@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="mx-auto">
       <Navbar/>
-      <AnimatedBackgroundAnimeJS/>
+      <ParticlesContainer/>
         <div className="wrapper">
         <main className="relative z-10 min-h-screen">{children}</main>
         </div>

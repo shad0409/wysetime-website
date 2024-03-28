@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className='bg-gray-300'>
+      <nav className='bg-gray-300' style={{ position: 'relative', zIndex: 1000 }}>
         <div className='max-w-10xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='flex items-center justify-between h-16'>
                 <div className='flex items-center'>
