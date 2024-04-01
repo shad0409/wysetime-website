@@ -25,13 +25,17 @@ const ParticlesContainer = () => {
     console.log(container);
   };
 
+  type RecursivePartial<T> = {
+    [P in keyof T]?: T[P] extends object ? RecursivePartial<T[P]> : T[P];
+  };
 
   if (init) {
     return (
       <Particles
         id="tsparticles"
         particlesLoaded={particlesLoaded}
-        options={particlesConfig} // Using imported config
+        options={particlesConfig as RecursivePartial<ISourceOptions>}
+
       />
     );
   }

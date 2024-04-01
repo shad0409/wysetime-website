@@ -1,4 +1,6 @@
-const particlesConfig = {
+import { ISourceOptions, RecursivePartial } from "@tsparticles/engine";
+
+const particlesConfig: RecursivePartial<ISourceOptions> = {
   autoPlay: true,
   background: {
     color: {
@@ -11,7 +13,7 @@ const particlesConfig = {
     opacity: 1
   },
   backgroundMask: {
-    composite: "destination-out",
+    composite: "source-over",
     cover: {
       color: {
         value: "#fff"
