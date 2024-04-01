@@ -6,11 +6,11 @@ import Logo from '../public/WyseLogo.png'
 
 export default function Navbar() {
 
-    const [isClick, setisClick] = useState();
+    const [isClick, setisClick] = useState<boolean>(false);
 
-    const toggleNavbar = ():void =>{
-        setisClick(!isClick)
-    }
+    const toggleNavbar = (): void => {
+        setisClick(!isClick);
+    };
 
   return (
     <div>

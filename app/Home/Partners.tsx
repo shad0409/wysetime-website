@@ -1,7 +1,6 @@
 import React from 'react';
 import { partners } from './types/partner';
 
-import logo from '../../public/WyseLogo.png'
 import Image, { StaticImageData } from 'next/image';
 
 export interface Partner {

@@ -1,7 +1,6 @@
 'use client'
 import {getProjects} from '@/sanity/sanity-utils'
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
 
 import "./globals.css";
 
