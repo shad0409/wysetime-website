@@ -17,6 +17,12 @@ import Footer from '../Footer';
 
 export default function Core() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [facialRef, facialInView] = useInView({ triggerOnce: true, threshold:0.1 });
+  const [ageRef, ageInView] = useInView({ triggerOnce: true, threshold:0.1 });
+  const [genderRef, genderInView] = useInView({ triggerOnce: true, threshold:0.1 });
+  const [crossRef, crossInView] = useInView({ triggerOnce: true, threshold:0.1 });
+  const [objectRef, objectInView] = useInView({ triggerOnce: true, threshold:0.1 });
+  const [ocrRef, ocrInView] = useInView({ triggerOnce: true, threshold:0.1 });
 
   return (
     <>
@@ -24,22 +30,22 @@ export default function Core() {
         <CoreHero/>
       </header>
       <section>
-        <div>
+        <div className={` py-10 ${facialInView ? 'fadeInUp' : ''}`} ref={facialRef}>
           <FacialMatching/>
         </div>
-        <div>
+        <div className={` py-10 ${ageInView ? 'fadeInUp' : ''}`} ref={ageRef}>
           <AgeEstimation/>
         </div>
-        <div>
+        <div className={` py-10 ${genderInView ? 'fadeInUp' : ''}`} ref={genderRef}>
           <GenderEstimation/>
         </div>
-        <div>
+        <div className={` py-10 ${crossInView ? 'fadeInUp' : ''}`} ref={crossRef}>
           <CrossPlatform/>
         </div>
-        <div>
+        <div className={` py-10 ${objectInView ? 'fadeInUp' : ''}`} ref={objectRef}>
           <ObjectRecognition/>
         </div>
-        <div>
+        <div className={` py-10 ${ocrInView ? 'fadeInUp' : ''}`} ref={ocrRef}>
           <OCRFeature/>
         </div>
       </section>

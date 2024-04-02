@@ -112,7 +112,7 @@ body {
 }
 
 .about-description-container {
-  max-width: 1900px;
+  max-width: 2600px;
   padding: 5px;
   text-align: center;
   display: flex;
@@ -137,9 +137,9 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 2100px;
   padding-top: 5px;
 }
 
@@ -283,7 +283,7 @@ body {
 
 /* Services */
 .services-container {
-  max-width: 1900px;
+  max-width: 2600px;
   margin: 0 auto;
   padding: 1%;
   display: flex;
@@ -405,7 +405,7 @@ body {
 
 /* Partners */
 .partners-container {
-  max-width: 1900px;
+  max-width: 2600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -493,9 +493,9 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 100px;
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 2200px;
   padding-top: 5px;
 }
 
@@ -538,7 +538,7 @@ html {
 
 /* About Products */
 .products-container {
-  max-width: 1900px;
+  max-width: 2600px;
   margin: 0 auto;
   padding: 1%;
   display: flex;
@@ -607,7 +607,7 @@ html {
 /* Core Technologies */
 
 .core-container {
-  max-width: 1900px;
+  max-width: 2600px;
   margin: 0 auto;
   padding: 1%;
   display: flex;
@@ -648,7 +648,7 @@ html {
 
 .core-image {
   width: 100%;
-  margin-right: -100px;
+  margin-left: 300px;
 }
 
 .core-content h3 {

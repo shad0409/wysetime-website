@@ -6,12 +6,12 @@ import ProductsImage1 from '../../../public/AgeEstimation.jpeg';
 const AgeEstimation: React.FC = () => {
   return (
     <div className="core-container">
-      <h2 className='core-heading'>Facial <span className="text-red-600">Matching</span></h2>
+      <h2 className='core-heading'>Age <span className="text-red-600">Estimation</span></h2>
       <CoreTech 
         image={ProductsImage1}
-        title="Facial Matching"
+        title="Age Estimation"
         description="About Tech"
-        reverse={true}
+        reverse={false}
       />
     </div>
   );

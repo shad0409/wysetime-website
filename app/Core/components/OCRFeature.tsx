@@ -6,12 +6,12 @@ import ProductsImage1 from '../../../public/OCRFeature.jpeg';
 const OCRFeature: React.FC = () => {
   return (
     <div className="core-container">
-      <h2 className='core-heading'>Facial <span className="text-red-600">Matching</span></h2>
+      <h2 className='core-heading'>OCR <span className="text-red-600">Feature</span></h2>
       <CoreTech 
         image={ProductsImage1}
-        title="Facial Matching"
+        title="OCR Feature"
         description="About Tech"
-        reverse={true}
+        reverse={false}
       />
     </div>
   );

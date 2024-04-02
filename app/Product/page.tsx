@@ -18,6 +18,9 @@ import Footer from '../Footer';
 export default function Products() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [boxRef, boxInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [aboutoneRef, aboutoneInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [abouttwoRef, abouttwoInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [aboutthreeRef, aboutthreeInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <>
@@ -25,16 +28,16 @@ export default function Products() {
         <ProductsHero />
       </header>
       <section>
-        <div className={` ${boxInView ? 'fadeInUp' : ''}`} ref={boxRef}>
+        <div className={` py-20 ${boxInView ? 'fadeInUp' : ''}`} ref={boxRef}>
           <ProductsBox/>
         </div>
-        <div>
+        <div className={` py-1 ${aboutoneInView ? 'fadeInUp' : ''}`} ref={aboutoneRef}>
           <AboutProducts1/>
         </div>
-        <div>
+        <div className={` py-1 ${abouttwoInView ? 'fadeInUp' : ''}`} ref={abouttwoRef}>
           <AboutProducts2/>
         </div>
-        <div>
+        <div className={` py-1 ${aboutthreeInView ? 'fadeInUp' : ''}`} ref={aboutthreeRef}>
           <AboutProducts3/>
         </div>
       </section>
