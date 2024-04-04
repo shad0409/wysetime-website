@@ -646,9 +646,8 @@ html {
   padding-right: 200px;
 }
 
-.core-image {
+.core-image.reverse{
   width: 100%;
-  margin-left: 300px;
 }
 
 .core-content h3 {
