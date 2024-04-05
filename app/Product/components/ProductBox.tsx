@@ -6,15 +6,15 @@ const ProductsBox = () => {
     return (
         <div className="products-box-container">
         <div className='products-box-individual-container'>
-            <h2>Products</h2>
+            <h2>Wyse-Traffic</h2>
         </div>
 
         <div className="products-box-individual-container">
-          <h2>Products</h2>
+          <h2>Wyse-Envision</h2>
         </div>
 
         <div className="products-box-individual-container">
-          <h2>Products</h2>
+          <h2>Wyse-Retail</h2>
         </div>
       </div>
       );
