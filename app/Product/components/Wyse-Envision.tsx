@@ -6,11 +6,11 @@ import ProductsImage1 from '../../../public/Traffic.jpg'; // Ensure the correct 
 const AboutProducts2: React.FC = () => {
   return (
     <div className="products-container">
-      <h2 className='product-heading'>Product <span className="text-red-600">2</span></h2>
+      <h2 className='product-heading'>Wyse <span className="text-red-600">Envision</span></h2>
       <Products 
         image={ProductsImage1}
-        title="Product 2"
-        description="About Product"
+        title="Wyse-Envision"
+        description="About Wyse-Envision"
         reverse={false}
       />
     </div>

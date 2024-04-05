@@ -8,9 +8,9 @@ import ProductsHero from './components/Hero';
 
 import ProductsBox from './components/ProductBox';
 
-import AboutProducts1 from './components/AboutProducts1';
-import AboutProducts3 from './components/AboutProducts3';
-import AboutProducts2 from './components/AboutProducts2';
+import AboutProducts1 from './components/Wyse-Traffic';
+import AboutProducts3 from './components/Wyse-Retail';
+import AboutProducts2 from './components/Wyse-Envision';
 
 import Footer from '../Footer';
 
