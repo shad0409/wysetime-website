@@ -1,7 +1,7 @@
 import React from 'react';
 import Products from './ProductsConfig';
 
-import ProductsImage1 from '../../../public/Traffic.jpg'; // Ensure the correct path
+import ProductsImage1 from '../../../public/retail_gif.gif'; // Ensure the correct path
 
 const AboutProducts3: React.FC = () => {
   return (
