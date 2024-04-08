@@ -6,17 +6,13 @@ import "../globals.css";
 
 // Individual Components
 import ContactHeader from './components/Hero';
+import ContactInfo from './components/Info';
 
 import Footer from '../Footer';
 
-
-
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [quoteRef, quoteInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [partnersRef, partnersInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <>
@@ -24,6 +20,9 @@ export default function Home() {
         <ContactHeader />
       </header>
       <section>
+        <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>
+          <ContactInfo />
+        </div>
       </section>
       <footer className=''>
         <Footer />

@@ -896,12 +896,11 @@ html {
 /* Contact Us */
 .contact-container {
   position: relative;
-  height: 100vh; 
+  height: 80vh; 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('../public/Home_BG.png') no-repeat center center; 
   background-size: cover; /* Cover the full area */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1); 
 }
@@ -936,4 +935,89 @@ html {
 .contact-content p {
   font-size: 1.5rem; 
   margin-bottom: 2em; 
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  z-index: 2; /* Make sure it's above the ::before element */
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #ffffff50; /* Semi-transparent white */
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-size: 1rem;
+  color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: white;
+}
+
+.contact-form button {
+  background: blue; /* Use your brand color */
+  color: white;
+  border: none;
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: darkblue; /* A darker shade for hover effect */
+}
+
+.contact-items-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 2100px;
+  padding-top: 5px;
+}
+
+.contact-items-container h2 {
+  background: rgba(0, 0, 0, 0); 
+  color: inherit; 
+  font-weight: 400;
+  font-size: larger;
+  padding-top: 5px;
+}
+
+.contact-items-container p {
+  font-weight: 100;
+  font-size: large;
+  padding-top: 5px;
+}
+
+.contact-item-container {
+  width: 30%;
+  min-width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments remain the same */
+@media (max-width: 768px) {
+  .contact-items-container {
+    flex-direction: column;
+  }
+
+  .contact-item-container {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
