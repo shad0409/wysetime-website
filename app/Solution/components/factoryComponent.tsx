@@ -11,8 +11,10 @@ const FactoryComponent = () => {
                 <h1>Factory Intelligence</h1>
             </div>
         </div>
-        <h1>About</h1>
-        <a href="/Solution/Factory" className="solution-learn-more">Learn More</a>
+        <div className='solution-about-content'>
+          <h2>About</h2>
+          <a href="/Solution/Factory" className="solution-learn-more">Learn More</a>
+        </div>
     </div>
 
   );

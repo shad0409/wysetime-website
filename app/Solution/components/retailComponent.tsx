@@ -11,8 +11,10 @@ const RetailComponent = () => {
                 <h1>Retail Intelligence</h1>
             </div>
         </div>
-        <h1>About</h1>
-        <a href="/Solution/Retail" className="solution-learn-more">Learn More</a>
+        <div className='solution-about-content'>
+          <h2>About</h2>
+          <a href="/Solution/Retail" className="solution-learn-more">Learn More</a>
+        </div>
     </div>
 
   );

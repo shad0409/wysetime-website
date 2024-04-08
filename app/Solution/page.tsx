@@ -17,30 +17,31 @@ import AttendanceComponent from './components/attendanceComponent';
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [quoteRef, quoteInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [partnersRef, partnersInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [trafficRef, trafficInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [retailRef, retailInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [factoryRef, factoryInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [guestRef, guestInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [attendanceRef, attendanceInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <>
-      <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
+      <header ref={heroRef} className={` py-10 ${heroInView ? 'fadeInUp' : ''}`}>
         <SolutionHeader />
       </header>
       <section>
-        <div>
+        <div className={` py-10 ${trafficInView ? 'fadeInUp' : ''}`} ref={trafficRef}>
           <TrafficComponent />
         </div>
-        <div>
+        <div className={` ${retailInView ? 'fadeInUp' : ''}`} ref={retailRef}>
           <RetailComponent />
         </div>
-        <div>
+        <div className={` py-10 ${factoryInView ? 'fadeInUp' : ''}`} ref={factoryRef}>
           <FactoryComponent />
         </div>
-        <div>
+        <div className={` ${guestInView ? 'fadeInUp' : ''}`} ref={guestRef}>
           <GuestComponent />
         </div>
-        <div>
+        <div className={` py-10 ${attendanceInView ? 'fadeInUp' : ''}`} ref={attendanceRef}>
           <AttendanceComponent />
         </div>
       </section>

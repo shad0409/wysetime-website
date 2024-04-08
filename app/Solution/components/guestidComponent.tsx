@@ -11,8 +11,10 @@ const GuestComponent = () => {
                 <h1>Guest Identification</h1>
             </div>
         </div>
-        <h1>About</h1>
-        <a href="/Solution/Guest" className="solution-learn-more">Learn More</a>
+        <div className='solution-about-content'>
+          <h2>About</h2>
+          <a href="/Solution/Guest" className="solution-learn-more">Learn More</a>
+        </div>
     </div>
 
   );

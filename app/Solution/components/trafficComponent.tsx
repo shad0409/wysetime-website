@@ -11,8 +11,10 @@ const TrafficComponent = () => {
                 <h1>Traffic Intelligence</h1>
             </div>
         </div>
-        <h1>About</h1>
-        <a href="/Solution/Traffic" className="solution-learn-more">Learn More</a>
+        <div className='solution-about-content'>
+          <h2>About</h2>
+          <a href="/Solution/Traffic" className="solution-learn-more">Learn More</a>
+        </div>
     </div>
 
   );
