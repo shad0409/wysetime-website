@@ -812,8 +812,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  height: 55vh; 
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  height: 45vh; 
+
 }
 
 .learn-more-container h1 {
@@ -828,10 +828,9 @@ html {
 }
 
 .about-learn-more {
-  border: 3px solid #000000;
-  background: rgba(0, 0, 0, 0.2); 
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  padding: 40px;
 }
 
 /* Case Studies */
