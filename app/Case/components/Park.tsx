@@ -1,14 +1,14 @@
 import React from 'react';
 import CaseStudies from './CaseConfigs';
 
-import ProductsImage1 from '../../../public/FacialMatching.jpeg'; 
+import ProductsImage1 from '../../../public/Park.png'; 
 
 const ThemePark: React.FC = () => {
   return (
     <div className="case-container">
       <CaseStudies 
         image={ProductsImage1}
-        title="Facial Matching"
+        title="Theme Park"
         description="Facial Matching technology is a sophisticated facet of biometric authentication that compares a captured facial image with images from a database to find an exact match, 
         thereby verifying an individual's identity. This technology employs complex algorithms and deep learning techniques to analyze specific facial features — such as the distance between the eyes, 
         the shape of the cheekbones, and the contour of the lips — across different images, even adjusting for variations in lighting, facial expressions, and angles. 

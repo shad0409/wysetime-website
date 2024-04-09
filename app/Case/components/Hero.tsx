@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import heroImage from '../../../public/Home_BG.png';
+import heroImage from '../../../public/CaseStudies.jpeg';
 
 const HeroCase = () => {
   return (

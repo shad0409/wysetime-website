@@ -13,9 +13,11 @@ import ShoppingMall from './components/ShoppingMall';
 import Airport from './components/Airport';
 import Events from './components/Events';
 import ThemePark from './components/Park';
+import TrafficStudies from './components/Traffic';
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [trafficRef, trafficInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [retailRef, retailInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [mallRef, mallInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [airportRef, airportInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -29,6 +31,9 @@ export default function Home() {
       </header>
       <section>
         <div className='py-20'>
+          <div className={` ${trafficInView ? 'fadeInUp' : ''}`} ref={trafficRef}>
+            <TrafficStudies/>
+          </div>
           <div className={` ${retailInView ? 'fadeInUp' : ''}`} ref={retailRef}>
             <RetailStore/>
           </div>
