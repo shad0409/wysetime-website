@@ -119,7 +119,6 @@ body {
   flex-direction: column;
   justify-content: center; 
   height: 55vh; 
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
 }
 
 .about-description-container h1 {
@@ -137,10 +136,10 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 100px;
   margin: 0 auto;
   max-width: 2100px;
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
 .about-items-container h2 {
@@ -166,6 +165,7 @@ body {
   align-items: center;
   text-align: center;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 /* Responsive adjustments remain the same */
@@ -410,7 +410,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: rgba(227, 227, 227, 0.5); 
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+
   overflow: hidden;
   position: relative;
 }
@@ -579,7 +579,7 @@ html {
 
 .product-image {
   width: 100%;
-  margin-right: -100px;
+  padding-left: 400px;
 }
 
 .product-content h3 {
@@ -678,29 +678,28 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   margin: 0 auto;
   max-width: 2000px;
-  padding-top: 400px;
-  padding-bottom: 400px;
+  padding-top: 30px;
 }
 
 .solution-items-container h2 {
   background: rgba(0, 0, 0, 0); 
   color: inherit; 
-  font-weight: 400;
+  font-weight: 600;
   font-size: larger;
   padding-top: 5px;
 }
 
 .solution-items-container p {
-  font-weight: 100;
+  font-weight: 200;
   font-size: large;
   padding-top: 5px;
 }
 
 .solution-item-container {
-  width: calc((2000px - 3 * 40px) / 4); /* Adjusted width */
+  width: calc((2000px - 3 * 60px) / 4); /* Adjusted width */
   min-width: 250px;
   padding: 20px;
   display: flex;
@@ -708,6 +707,8 @@ html {
   align-items: center;
   text-align: center;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  background: #EE6F57;
+  border-radius: 15px;
 }
 
 
@@ -763,13 +764,19 @@ html {
 }
 
 .solution-about-content {
-  font-size: 4rem; 
-  text-transform: uppercase; 
+  font-size: 1rem; 
   line-height: 1.2;
   margin-bottom: 0.5em; 
-  font-weight: 900;
+  font-weight: 200;
   letter-spacing: 2px; 
   padding: 100px;
+  max-width: 1200px;
+}
+
+.solution-about-content h2 {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 50px;
 }
 
 .solution-about-content a {
@@ -783,7 +790,7 @@ html {
   color: white;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: background-color 0.3s ease;
   font-weight: bold;
   cursor: pointer;
@@ -874,11 +881,15 @@ html {
 .case-content h3 {
   font-weight: 400;
   font-size: xx-large;
+  padding-bottom: 10px;
 }
 
 .case-content p {
   font-weight: 100;
   font-size: large;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 50px;
 }
 
 @media (max-width: 768px) {
@@ -940,7 +951,7 @@ html {
 .contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 1000px;
   width: 100%;
   z-index: 2; /* Make sure it's above the ::before element */
 }
@@ -962,7 +973,7 @@ html {
 }
 
 .contact-form button {
-  background: blue; /* Use your brand color */
+  background: #d9534f; 
   color: white;
   border: none;
   padding: 1em;
@@ -972,16 +983,15 @@ html {
 }
 
 .contact-form button:hover {
-  background: darkblue; /* A darker shade for hover effect */
+  background: #c9302c; 
 }
 
 .contact-items-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
   margin: 0 auto;
-  max-width: 2100px;
+  max-width: 2500px;
   padding-top: 5px;
 }
 
@@ -1000,11 +1010,11 @@ html {
 }
 
 .contact-item-container {
-  width: 30%;
-  min-width: 250px;
+  flex: 1; 
+  min-width: 250px; 
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   text-align: center;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);

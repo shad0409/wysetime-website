@@ -8,14 +8,12 @@ const TrafficStudies: React.FC = () => {
     <div className="case-container">
       <CaseStudies 
         image={ProductsImage1}
-        title="Traffic Studies"
-        description="Facial Matching technology is a sophisticated facet of biometric authentication that compares a captured facial image with images from a database to find an exact match, 
-        thereby verifying an individual's identity. This technology employs complex algorithms and deep learning techniques to analyze specific facial features — such as the distance between the eyes, 
-        the shape of the cheekbones, and the contour of the lips — across different images, even adjusting for variations in lighting, facial expressions, and angles. 
-        Its applications are vast and varied, encompassing security systems for identity verification, smartphone unlocking mechanisms, and automated border control checks, 
-        enhancing both convenience and safety. Facial Matching is also instrumental in forensic investigations, helping to identify individuals in surveillance footage. 
-        Despite its utility, the technology faces challenges regarding privacy concerns, the potential for misuse, and the need for regulatory oversight to prevent discrimination and protect individual rights.
-        Nonetheless, as the technology advances and these concerns are addressed, Facial Matching continues to revolutionize security and personal identification processes."
+        title="Traffic"
+        description="To address the pervasive challenge of traffic congestion, a new approach to traffic management was adopted, focusing on optimizing vehicle flow and boosting public transportation effectiveness. 
+        This initiative employed innovative traffic signal algorithms, leveraged real-time data analytics, and introduced strategic rerouting to alleviate the stress of daily commutes. 
+        A key aspect of this strategy was the prioritization of dedicated lanes for buses and emergency vehicles, which significantly improved the reliability of public transit and the efficiency of emergency responses. 
+        This case highlights the vital role of technological integration in urban planning, illustrating how smart traffic management systems can lead to smoother travel experiences and contribute to the sustainable development of urban environments. 
+        By directly tackling congestion issues, it provides a scalable solution for cities worldwide, enhancing the quality of urban life without necessitating specific data points for its validation."
         reverse={false}
       />
     </div>

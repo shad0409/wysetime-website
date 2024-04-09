@@ -9,13 +9,10 @@ const ShoppingMall: React.FC = () => {
       <CaseStudies 
         image={ProductsImage1}
         title="Shopping Mall"
-        description="Facial Matching technology is a sophisticated facet of biometric authentication that compares a captured facial image with images from a database to find an exact match, 
-        thereby verifying an individual's identity. This technology employs complex algorithms and deep learning techniques to analyze specific facial features — such as the distance between the eyes, 
-        the shape of the cheekbones, and the contour of the lips — across different images, even adjusting for variations in lighting, facial expressions, and angles. 
-        Its applications are vast and varied, encompassing security systems for identity verification, smartphone unlocking mechanisms, and automated border control checks, 
-        enhancing both convenience and safety. Facial Matching is also instrumental in forensic investigations, helping to identify individuals in surveillance footage. 
-        Despite its utility, the technology faces challenges regarding privacy concerns, the potential for misuse, and the need for regulatory oversight to prevent discrimination and protect individual rights.
-        Nonetheless, as the technology advances and these concerns are addressed, Facial Matching continues to revolutionize security and personal identification processes."
+        description="Facing the challenge of declining foot traffic, shopping malls embarked on a transformative journey to reinvent itself as a multi-use destination. 
+        Through the introduction of experiential spaces, community events, and a diversified mix of retailers and dining options, the mall successfully rejuvenated interest among consumers. 
+        This shift not only increased visitation rates but also enhanced the overall community value of the mall as a central hub for social, cultural, and shopping activities. 
+        This case illustrates the potential of adaptive re-use and creative programming in revitalizing retail environments for the modern consumer."
         reverse={false}
       />
     </div>

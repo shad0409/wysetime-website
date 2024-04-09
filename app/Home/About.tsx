@@ -33,9 +33,7 @@ const AboutWyseTime = () => {
         ensuring their success in the modern digital landscape.
         </p>
         </div>
-      </div>
-
-      <div className="about-items-container">
+        <div className="about-items-container">
         <div className='about-item-container'>
             <Image src={StoryIcon} height={100} width={100} alt="Our Story" objectFit='contain' />
             <h2>Our Story</h2>
@@ -62,6 +60,9 @@ const AboutWyseTime = () => {
               counting data is used for operational and strategic decisions.</p>
         </div>
       </div>
+      </div>
+
+
     </>
   );
 };

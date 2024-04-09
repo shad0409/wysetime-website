@@ -9,13 +9,9 @@ const Events: React.FC = () => {
       <CaseStudies 
         image={ProductsImage1}
         title="Events & Exhibition"
-        description="Facial Matching technology is a sophisticated facet of biometric authentication that compares a captured facial image with images from a database to find an exact match, 
-        thereby verifying an individual's identity. This technology employs complex algorithms and deep learning techniques to analyze specific facial features — such as the distance between the eyes, 
-        the shape of the cheekbones, and the contour of the lips — across different images, even adjusting for variations in lighting, facial expressions, and angles. 
-        Its applications are vast and varied, encompassing security systems for identity verification, smartphone unlocking mechanisms, and automated border control checks, 
-        enhancing both convenience and safety. Facial Matching is also instrumental in forensic investigations, helping to identify individuals in surveillance footage. 
-        Despite its utility, the technology faces challenges regarding privacy concerns, the potential for misuse, and the need for regulatory oversight to prevent discrimination and protect individual rights.
-        Nonetheless, as the technology advances and these concerns are addressed, Facial Matching continues to revolutionize security and personal identification processes."
+        description="In response to the increasing demand for dynamic and engaging events, exhibition organizers leveraged cutting-edge technology and innovative event design to create immersive experiences. 
+        Through the use of interactive displays, virtual reality, and personalized content, attendees were able to engage more deeply with the exhibits and presentations. 
+        This approach not only elevated the attendee experience but also set new standards for engagement and interactivity at events and exhibitions, demonstrating the transformative impact of technology on the events industry."
         reverse={false}
       />
     </div>

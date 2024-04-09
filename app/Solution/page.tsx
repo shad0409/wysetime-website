@@ -29,19 +29,19 @@ export default function Home() {
         <SolutionHeader />
       </header>
       <section>
-        <div className={` py-10 ${trafficInView ? 'fadeInUp' : ''}`} ref={trafficRef}>
+        <div className={`${trafficInView ? 'fadeInUp' : ''}`} ref={trafficRef}>
           <TrafficComponent />
         </div>
         <div className={` ${retailInView ? 'fadeInUp' : ''}`} ref={retailRef}>
           <RetailComponent />
         </div>
-        <div className={` py-10 ${factoryInView ? 'fadeInUp' : ''}`} ref={factoryRef}>
+        <div className={`${factoryInView ? 'fadeInUp' : ''}`} ref={factoryRef}>
           <FactoryComponent />
         </div>
         <div className={` ${guestInView ? 'fadeInUp' : ''}`} ref={guestRef}>
           <GuestComponent />
         </div>
-        <div className={` py-10 ${attendanceInView ? 'fadeInUp' : ''}`} ref={attendanceRef}>
+        <div className={`${attendanceInView ? 'fadeInUp' : ''}`} ref={attendanceRef}>
           <AttendanceComponent />
         </div>
       </section>
