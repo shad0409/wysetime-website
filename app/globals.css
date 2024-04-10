@@ -169,7 +169,11 @@ body {
 }
 
 /* Responsive adjustments remain the same */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .about-description-container {
+    margin-top: 60vh;
+  }
+
   .about-items-container {
     flex-direction: column;
   }
@@ -335,17 +339,33 @@ body {
 .service-content p {
   font-weight: 100;
   font-size: large;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .services-container {
+    margin-top: 60vh;
+  }
+
   .service, .service.reverse {
-    grid-template-columns: 1fr; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
   .service-content, .service-image {
-    width: 100%; 
-    justify-self: center; 
+    max-width: 768px;
+    width: 80%; 
+    justify-content: center; 
+    text-align: center;
     margin: 0 auto; 
-    padding: 1rem 0; 
+    padding: 1rem; 
+  }
+  .service-image {
+    width: 100%; 
+    max-width: 400px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -594,13 +614,22 @@ html {
 
 @media (max-width: 768px) {
   .product, .product.reverse {
-    grid-template-columns: 1fr; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
   .product-content, .product-image {
-    width: 100%; 
-    justify-self: center; 
+    max-width: 768px;
+    width: 80%; 
+    justify-content: center; 
+    text-align: center;
     margin: 0 auto; 
-    padding: 1rem 0; 
+    padding: 1rem; 
+  }
+  .product-image {
+    width: 100%; 
+    max-width: 400px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -661,14 +690,23 @@ html {
 }
 
 @media (max-width: 768px) {
-  .core, .core.reverse {
-    grid-template-columns: 1fr; 
+  .core, .core-content.reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
   .core-content, .core-image {
-    width: 100%; 
-    justify-self: center; 
+    max-width: 768px;
+    width: 80%; 
+    justify-content: center; 
+    text-align: center;
     margin: 0 auto; 
-    padding: 1rem 0; 
+    padding: 1rem; 
+  }
+  .core-image {
+    width: 100%; 
+    max-width: 400px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -893,13 +931,21 @@ html {
 
 @media (max-width: 768px) {
   .case, .case.reverse {
-    grid-template-columns: 1fr; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
   .case-content, .case-image {
-    width: 100%; 
-    justify-self: center; 
+    max-width: 768px;
+    width: 350px; 
+    justify-content: center; 
+    text-align: center;
     margin: 0 auto; 
-    padding: 1rem 0; 
+  }
+  .case-image {
+    width: 100%; 
+    max-width: 400px;
+    margin-bottom: 1rem;
   }
 }
 
