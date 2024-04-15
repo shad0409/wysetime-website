@@ -1,9 +1,8 @@
 import {getProjects} from '@/sanity/sanity-utils'
-import { Project } from '@/types/Project';
+import { Project } from '@/types/Product';
 import React, { useEffect, useState } from 'react';
 import Products from './ProductsConfig';
 
-import ProductsImage1 from '../../../public/traffic_gif.gif'; // Ensure the correct path
 import { Image } from 'next-sanity/image';
 import { PortableText } from 'next-sanity';
 
@@ -22,20 +21,22 @@ const AboutProducts1: React.FC = () => {
   return (
     <div className="products-container">
       <h2 className='product-heading'>Wyse <span className="text-red-600">Traffic</span></h2>
-      {projects.map((project) => (
-        <div key={project._id} className='border border-grey-500 rounded-lg'>
-          {project.image && (
-            <Image
-              src={project.image}
-              alt={project.name}
-              width={500}
-              height={500}
-              className="object-cover rounded-lg border border-gray-500"
-            />
-          )}
-          <PortableText value={project.content} />
-        </div>
-      ))}
+      {projects
+        .filter((project) => project.name === 'Wyse-Traffic')
+        .map((project) => (
+          <div key={project._id} className='border border-grey-500 rounded-lg'>
+            {project.image && (
+              <Image
+                src={project.image}
+                alt={project.name}
+                width={500}
+                height={500}
+                className="object-cover rounded-lg border border-gray-500"
+              />
+            )}
+            <PortableText value={project.content} />
+          </div>
+        ))}
     </div>
   );
 };

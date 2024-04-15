@@ -63,3 +63,50 @@ const AboutProducts1: React.FC = () => {
 };
 
 export default AboutProducts1;
+
+2nd schema
+
+import React, { useEffect, useState } from 'react';
+import { getProjects } from '@/sanity/sanity-utils';
+import { getHomeData } from '@/sanity/sanity-utils';  // Assuming this function is added
+import { Image } from 'next-sanity/image';
+import { PortableText } from 'next-sanity';
+import { Home } from '@/types/Home';
+
+const FacialMatching: React.FC = () => {
+  const [homes, setHomes] = useState<Home[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const homeData = await getHomeData();
+      const projectsData = await getProjects();
+      setHomes(homeData);
+    };
+
+    fetchData();
+  }, []); 
+
+  return (
+    <div className="products-container">
+      <h2 className='product-heading'>Wyse <span className="text-red-600">Traffic</span></h2>
+      {homes
+        .filter((home) => home.name === 'test') // Assuming you want to filter on some property
+        .map((home) => (
+          <div key={home._id} className='border border-grey-500 rounded-lg'>
+            {home.image && (
+              <Image
+                src={home.image}
+                alt={home.name}
+                width={500}
+                height={500}
+                className="object-cover rounded-lg border border-gray-500"
+              />
+            )}
+            <PortableText value={home.content} /> 
+          </div>
+        ))}
+    </div>
+  );
+};
+
+export default FacialMatching;

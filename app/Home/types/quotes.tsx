@@ -16,7 +16,6 @@ const quotes: Quote[] = [
       text: "In the world of Internet of Things, data analytics provides the roadmap to innovation and success.",
       source: "Alice Johnson, CTO at CyberSolutions"
     },
-    // Add more quotes as needed
   ];
 
   export default quotes;
