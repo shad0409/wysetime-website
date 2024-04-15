@@ -118,7 +118,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  height: 55vh; 
 }
 
 .about-description-container h1 {
@@ -136,7 +135,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 60px;
   margin: 0 auto;
   max-width: 2100px;
   padding-top: 20px;
@@ -196,6 +195,7 @@ body {
   background: url('../public/Home_BG.png') no-repeat center center; 
   background-size: cover; /* Cover the full area */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1); 
+  margin-bottom: 50px;
 }
 
 .hero-container::before {
