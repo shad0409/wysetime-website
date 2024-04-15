@@ -6,7 +6,7 @@ const config = defineConfig({
     projectId: "xy2vpkl0",
     dataset: "production",
     title: "WyseTime",
-    apiVersion: "2024-03-17", // Use today's date or future release date
+    apiVersion: "2024-04-17", // Use today's date or future release date
     basePath: "/admin",
     plugins: [structureTool()],
     schema: { types: schemas}

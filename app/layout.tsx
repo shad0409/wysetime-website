@@ -6,7 +6,6 @@ import "./globals.css";
 import Navbar from "./Navbar";
 
 import ParticlesContainer from "@/components/ParticlesContainer";
-import Footer from "./Footer";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });

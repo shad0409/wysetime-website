@@ -104,7 +104,11 @@ body {
   box-sizing: border-box; 
 }
 
-
+/* Admin Page */
+.studio-container {
+  height: 103vh; 
+  overflow-y: auto; 
+}
 
 /* About Section Styling */
 .about-description-container, .about-item-container {

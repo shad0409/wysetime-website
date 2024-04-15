@@ -1,9 +1,22 @@
-import React from 'react';
+import {getProjects} from '@/sanity/sanity-utils'
+import { Project } from '@/types/Project';
+import React, { useEffect, useState } from 'react';
 import Products from './ProductsConfig';
 
 import ProductsImage1 from '../../../public/traffic_gif.gif'; // Ensure the correct path
 
 const AboutProducts1: React.FC = () => {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      const projectsData = await getProjects();
+      setProjects(projectsData);
+    };
+
+    fetchProjects();
+  }, []); 
+
   return (
     <div className="products-container">
       <h2 className='product-heading'>Wyse <span className="text-red-600">Traffic</span></h2>

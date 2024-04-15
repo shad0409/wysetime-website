@@ -1,4 +1,4 @@
-import project from './project-schema';
+import project from './home';
 
 const schemas = [project];
 
