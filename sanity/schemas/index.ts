@@ -1,4 +1,4 @@
-import project from './home';
+import project from './product';
 
 const schemas = [project];
 

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.18",
     "@react-spring/parallax": "^9.7.3",
     "@tsparticles/engine": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
