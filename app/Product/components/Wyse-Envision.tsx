@@ -24,7 +24,7 @@ const AboutProducts2: React.FC = () => {
       {projects
         .filter((project) => project.name === 'Wyse-Envision')
         .map((project) => (
-          <div key={project._id} className='border border-grey-500 rounded-lg'>
+          <div key={project._id} className='border border-grey-500 rounded-lg flex'>
             {project.image && (
               <Image
                 src={project.image}
@@ -34,7 +34,9 @@ const AboutProducts2: React.FC = () => {
                 className="object-cover rounded-lg border border-gray-500"
               />
             )}
+            <div className='product-content'>
             <PortableText value={project.content} />
+            </div>
           </div>
         ))}
     </div>

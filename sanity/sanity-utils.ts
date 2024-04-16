@@ -1,6 +1,8 @@
+import { PortableTextBlock, createClient, groq } from "next-sanity";
+
 import { Project } from "@/types/Product";
 import { Home } from "@/types/Home";
-import { createClient, groq } from "next-sanity";
+import { Quote, Quotes } from "@/types/Home_Quotes";
 
 export const revalidate = 10
 
@@ -37,4 +39,22 @@ export async function getHomeData(): Promise<Home[]> {
             content
         }`
     );
+}
+
+export async function getHomeQuoteData(): Promise<Quotes[]> {
+    const results = await client.fetch(
+        groq`*[_type == "home_quote"]{
+            _id,
+            _createdAt,
+            name,
+            "slug": slug.current,
+            content
+        }`
+    );
+
+    return results.map((home_quote: Quote) => ({
+        id: home_quote._id,
+        text: home_quote.content[0]?.children[0]?.text, // Assuming 'text' is nested inside 'content'
+        source: home_quote.name  
+    }));
 }
