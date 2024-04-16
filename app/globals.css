@@ -838,6 +838,12 @@ html {
   font-size: 1rem;
 }
 
+.solution-content {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 50px;
+}
+
 .solution-learn-more {
   display: inline-block;
   padding: 15px 35px;

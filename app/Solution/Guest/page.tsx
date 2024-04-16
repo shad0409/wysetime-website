@@ -1,17 +1,29 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import heroImage from '../../../public/Guest.jpeg'
 
 import '../../globals.css';
 import Footer from '@/app/Footer';
 import { useInView } from 'react-intersection-observer';
+import { PortableText } from 'next-sanity';
+import { SolutionsMore } from '@/types/SolutionsMore';
+import { getSolutionMoreData } from '@/sanity/sanity-utils';
 
 const GuestPage = () => {
+  const [solutionsMore, setSolutionsMore] = useState<SolutionsMore[]>([]);
+
+  useEffect(() => {
+    const fetchSolutionsMore = async () => {
+      const projectsData = await getSolutionMoreData();
+      setSolutionsMore(projectsData);
+    };
+
+    fetchSolutionsMore();
+  }, []); 
+
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [trafficRef, trafficInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [retailRef, retailInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [factoryRef, factoryInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <div>
@@ -21,32 +33,59 @@ const GuestPage = () => {
           <h1>Guest Identification</h1>
         </div>
       </div>
-      <div>
-        <div className="learn-more-container">
-          <h1 className='text-black text-center py-5'>Background</h1>
-          <div className="about-learn-more">
+      <div ref={aboutRef} className={` ${aboutInView ? 'fadeInUp' : ''}`}>
+      {solutionsMore
+        .filter((solution_more) => solution_more.slug === 'guest1')
+        .map((solution_more) => (
+          <div key={solution_more._id}>
 
+            <div className="learn-more-container">
+              <h1 className='text-black text-center py-5'>{solution_more.name}</h1>
+
+              <div className="about-learn-more">
+                <PortableText value={solution_more.content} />
+              </div>
+            </div>  
           </div>
-        </div>
 
-        <div className="learn-more-container">
-          <h1 className='text-black text-center py-5'></h1>
-          <div className="about-learn-more">
+    
+        ))}
+        
+        {solutionsMore
+        .filter((solution_more) => solution_more.slug === 'guest2')
+        .map((solution_more) => (
+          <div key={solution_more._id}>
 
+            <div className="learn-more-container">
+              <h1 className='text-black text-center py-5'>{solution_more.name}</h1>
+
+              <div className="about-learn-more">
+                <PortableText value={solution_more.content} />
+              </div>
+            </div>  
           </div>
-        </div>
 
-        <div className="learn-more-container">
-          <h1 className='text-black text-center py-5'></h1>
-          <div className="about-learn-more">
+    
+        ))}
 
+        {solutionsMore
+        .filter((solution_more) => solution_more.slug === 'guest3')
+        .map((solution_more) => (
+          <div key={solution_more._id}>
+
+            <div className="learn-more-container">
+              <h1 className='text-black text-center py-5'>{solution_more.name}</h1>
+
+              <div className="about-learn-more">
+                <PortableText value={solution_more.content} />
+              </div>
+            </div>  
           </div>
-        </div>
-      </div>
-      <Footer/>
+        ))}
     </div>
-
-  );
-};
+    <Footer />
+  </div>
+);
+}
 
 export default GuestPage;

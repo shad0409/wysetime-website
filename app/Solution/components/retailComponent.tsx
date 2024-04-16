@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import heroImage from '../../../public/RetailIntelligence.jpeg';
 
+import { getSolutionData } from '@/sanity/sanity-utils'
+import { Solutions } from '@/types/Solutions';
+import { PortableText } from 'next-sanity';
+
 const RetailComponent = () => {
+  const [solutions, setSolutions] = useState<Solutions[]>([]);
+
+  useEffect(() => {
+    const fetchSolutions = async () => {
+      const projectsData = await getSolutionData();
+      setSolutions(projectsData);
+    };
+
+    fetchSolutions();
+  }, []); 
+
   return (
     <div>
         <div className="solution-comp-container">
@@ -12,13 +27,16 @@ const RetailComponent = () => {
             </div>
         </div>
         <div className='solution-about-content'>
-          <h2>Retail intelligence, leveraging AI prowess in image and video processing, is transforming the retail sector into a more data-driven and customer-centric industry. 
-            By analyzing in-store video feeds, this technology offers unparalleled insights into customer behavior, store traffic patterns, and product interactions. 
-            This enables retailers to optimize store layouts, improve inventory management, and tailor marketing strategies to enhance customer engagement. 
-            AI-driven retail intelligence systems also enhance security measures and loss prevention through real-time monitoring and anomaly detection. 
-            As a result, retailers can offer personalized shopping experiences, streamline operations, and ultimately increase sales and customer satisfaction. 
-            This technological evolution signifies a leap towards innovative retail solutions, making shopping seamless and more enjoyable for consumers.</h2>
-            <div className='py-5'>
+        {solutions
+        .filter((solution) => solution.name === 'Retail-Intelligence')
+        .map((solution) => (
+          <div key={solution._id} className='border border-grey-500 rounded-lg flex'>
+            <div className='solution-content'>
+            <PortableText value={solution.content} />
+            </div>
+          </div>
+        ))}
+            <div className='py-5'> 
               <a href="/Solution/Retail" className="solution-learn-more">Learn More</a>
             </div>
         </div>
@@ -26,5 +44,4 @@ const RetailComponent = () => {
 
   );
 };
-
 export default RetailComponent;

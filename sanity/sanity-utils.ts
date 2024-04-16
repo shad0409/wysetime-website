@@ -3,6 +3,8 @@ import { PortableTextBlock, createClient, groq } from "next-sanity";
 import { Project } from "@/types/Product";
 import { Home } from "@/types/Home";
 import { Quote, Quotes } from "@/types/Home_Quotes";
+import { Solutions } from "@/types/Solutions";
+import { SolutionsMore } from "@/types/SolutionsMore";
 
 export const revalidate = 10
 
@@ -57,4 +59,28 @@ export async function getHomeQuoteData(): Promise<Quotes[]> {
         text: home_quote.content[0]?.children[0]?.text, // Assuming 'text' is nested inside 'content'
         source: home_quote.name  
     }));
+}
+
+export async function getSolutionData(): Promise<Solutions[]> {
+    return client.fetch(
+        groq`*[_type == "solution"]{
+            _id,
+            _createdAt,
+            name,
+            "slug": slug.current,
+            content
+        }`
+    );
+}
+
+export async function getSolutionMoreData(): Promise<SolutionsMore[]> {
+    return client.fetch(
+        groq`*[_type == "solution_more"]{
+            _id,
+            _createdAt,
+            name,
+            "slug": slug.current,
+            content
+        }`
+    );
 }

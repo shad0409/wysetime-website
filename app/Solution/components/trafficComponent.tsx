@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import heroImage from '../../../public/TrafficSolutions.jpg';
 
+import { getSolutionData } from '@/sanity/sanity-utils'
+import { Solutions } from '@/types/Solutions';
+import { PortableText } from 'next-sanity';
+
 const TrafficComponent = () => {
+  const [solutions, setSolutions] = useState<Solutions[]>([]);
+
+  useEffect(() => {
+    const fetchSolutions = async () => {
+      const projectsData = await getSolutionData();
+      setSolutions(projectsData);
+    };
+
+    fetchSolutions();
+  }, []); 
+
   return (
     <div>
         <div className="solution-comp-container">
@@ -12,11 +27,15 @@ const TrafficComponent = () => {
             </div>
         </div>
         <div className='solution-about-content'>
-          <h2>Traffic intelligence, powered by AI with advanced image and video processing capabilities, is revolutionizing the way we manage and navigate urban environments. 
-            This innovative technology interprets vast streams of data from traffic cameras and sensors, offering real-time insights into traffic conditions, congestion patterns, 
-            and accident detection. By harnessing the power of machine learning algorithms, it predicts traffic flows, optimizes signal timings, and improves overall road safety. 
-            For city planners and commuters alike, traffic intelligence promises a more efficient, safe, and sustainable urban mobility experience. Its application extends beyond mere traffic management, 
-            facilitating smart city initiatives and paving the way for the future of autonomous vehicles.</h2>
+        {solutions
+        .filter((solution) => solution.name === 'Traffic-Intelligence')
+        .map((solution) => (
+          <div key={solution._id} className='border border-grey-500 rounded-lg flex'>
+            <div className='solution-content'>
+            <PortableText value={solution.content} />
+            </div>
+          </div>
+        ))}
             <div className='py-5'> 
               <a href="/Solution/Traffic" className="solution-learn-more">Learn More</a>
             </div>
