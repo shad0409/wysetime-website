@@ -5,6 +5,7 @@ import { Home } from "@/types/Home";
 import { Quote, Quotes } from "@/types/Home_Quotes";
 import { Solutions } from "@/types/Solutions";
 import { SolutionsMore } from "@/types/SolutionsMore";
+import { CoreTechs } from "@/types/CoreTech";
 
 export const revalidate = 10
 
@@ -83,4 +84,16 @@ export async function getSolutionMoreData(): Promise<SolutionsMore[]> {
             content
         }`
     );
+}
+
+export async function getCoreTech(): Promise<CoreTechs[]> {
+    return client.fetch(
+        groq`*[_type == "coretech"]{
+            _id,
+            _createdAt,
+            name,
+            "slug": slug.current,
+            content
+        }`
+    )
 }

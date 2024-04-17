@@ -30,22 +30,22 @@ export default function Core() {
         <CoreHero/>
       </header>
       <section>
-        <div className={` py-10 ${facialInView ? 'fadeInUp' : ''}`} ref={facialRef}>
+        <div className={` ${facialInView ? 'fadeInUp' : ''}`} ref={facialRef}>
           <FacialMatching/>
         </div>
-        <div className={` py-10 ${ageInView ? 'fadeInUp' : ''}`} ref={ageRef}>
+        <div className={` ${ageInView ? 'fadeInUp' : ''}`} ref={ageRef}>
           <AgeEstimation/>
         </div>
-        <div className={` py-10 ${genderInView ? 'fadeInUp' : ''}`} ref={genderRef}>
+        <div className={` ${genderInView ? 'fadeInUp' : ''}`} ref={genderRef}>
           <GenderEstimation/>
         </div>
-        <div className={` py-10 ${crossInView ? 'fadeInUp' : ''}`} ref={crossRef}>
+        <div className={` ${crossInView ? 'fadeInUp' : ''}`} ref={crossRef}>
           <CrossPlatform/>
         </div>
-        <div className={` py-10 ${objectInView ? 'fadeInUp' : ''}`} ref={objectRef}>
+        <div className={` ${objectInView ? 'fadeInUp' : ''}`} ref={objectRef}>
           <ObjectRecognition/>
         </div>
-        <div className={` py-10 ${ocrInView ? 'fadeInUp' : ''}`} ref={ocrRef}>
+        <div className={` ${ocrInView ? 'fadeInUp' : ''}`} ref={ocrRef}>
           <OCRFeature/>
         </div>
       </section>

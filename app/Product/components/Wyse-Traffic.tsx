@@ -18,7 +18,7 @@ const AboutProducts1: React.FC = () => {
   }, []); 
 
   return (
-    <div className="products-container">
+    <div className="products-container1">
       <h2 className='product-heading'>Wyse <span className="text-red-600">Traffic</span></h2>
       {projects
         .filter((project) => project.name === 'Wyse-Traffic')

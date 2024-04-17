@@ -28,16 +28,13 @@ export default function Products() {
         <ProductsHero />
       </header>
       <section>
-        <div className={` py-20 ${boxInView ? 'fadeInUp' : ''}`} ref={boxRef}>
-          <ProductsBox/>
-        </div>
-        <div className={` py-1 ${aboutoneInView ? 'fadeInUp' : ''}`} ref={aboutoneRef}>
+        <div className={`${aboutoneInView ? 'fadeInUp' : ''}`} ref={aboutoneRef}>
           <AboutProducts1/>
         </div>
-        <div className={` py-1 ${abouttwoInView ? 'fadeInUp' : ''}`} ref={abouttwoRef}>
+        <div className={`${abouttwoInView ? 'fadeInUp' : ''}`} ref={abouttwoRef}>
           <AboutProducts2/>
         </div>
-        <div className={` py-1 ${aboutthreeInView ? 'fadeInUp' : ''}`} ref={aboutthreeRef}>
+        <div className={`${aboutthreeInView ? 'fadeInUp' : ''}`} ref={aboutthreeRef}>
           <AboutProducts3/>
         </div>
       </section>

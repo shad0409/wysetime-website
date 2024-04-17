@@ -12,7 +12,6 @@ import AboutWyseTime from './Home/About';
 import ServicesWyseTime from './Home/Services';
 
 import QuoteComponent from './Home/Quote';
-import quotes from './Home/types/quotes';
 
 import OurPartners from './Home/Partners';
 import Footer from './Footer';
@@ -34,13 +33,13 @@ export default function Home() {
         <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
           <AboutWyseTime />
         </div>
-        <div className={` py-1 ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
+        <div className={` ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
           <ServicesWyseTime />
         </div>
         <div className={` ${quoteInView ? 'fadeInUp' : ''}`} ref={quoteRef}>
-          <QuoteComponent quotes={quotes} />
+          <QuoteComponent/>
         </div>
-        <div className={` py-1 ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
           <OurPartners partners={partners} />
         </div>
       </section>

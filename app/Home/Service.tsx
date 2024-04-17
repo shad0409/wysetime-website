@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import { PortableText } from 'next-sanity';
 
 interface ServiceProps {
   image: any;
   title: string;
-  description: string;
+  description: any;
   reverse?: boolean; 
 }
 
@@ -17,14 +18,14 @@ const Service: React.FC<ServiceProps> = ({ image, title, description, reverse })
         </div>
         <div className="service-content text-black">
           <h3>{title}</h3>
-          <p>{description}</p>
+          <PortableText value={description} />
         </div>
       </>
     ) : (
       <>
         <div className="service-content text-black">
           <h3>{title}</h3>
-          <p>{description}</p>
+          <PortableText value={description} />
         </div>
         <div className="service-image">
           <Image src={image} alt={title} width={350} height={350} objectFit='contain' />

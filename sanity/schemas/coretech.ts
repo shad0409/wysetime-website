@@ -1,6 +1,6 @@
-const solution_more = {
-    name: "solution_more",
-    title: "Solutions_More",
+const coretech = {
+    name: "coretech",
+    title: "CoreTech",
     type: "document",
     fields: [
         {
@@ -23,4 +23,4 @@ const solution_more = {
     ]
 }
 
-export default solution_more;
+export default coretech;
