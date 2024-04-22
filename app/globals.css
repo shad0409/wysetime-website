@@ -123,6 +123,7 @@ body {
   flex-direction: column;
   justify-content: center; 
   margin-top: 50px;
+  height: 70vh;
 }
 
 .about-description-container h1 {
@@ -298,9 +299,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
   justify-content: center;
   background: rgba(228, 238, 247, 0.5);
+  background: linear-gradient(to bottom, rgba(227, 227, 227, 0.5) 0%, rgba(228, 238, 247, 0.5) 50%);
+  height: 80vh;
 }
 
 .services-container h2 {
@@ -334,7 +336,7 @@ body {
 
 .service-image {
   width: 100%;
-  margin-right: -500px;
+  margin-right: -800px;
 }
 
 .service-content h3 {
@@ -377,12 +379,18 @@ body {
 
 /* Quotes */
 .quote-container {
-  background: linear-gradient(to bottom, rgba(255, 95, 109, 0.5), rgba(255, 195, 113, 0.5));
+  background: linear-gradient(to bottom, 
+    rgba(228, 238, 247, 0.5) 0%,
+    rgba(203, 55, 55, 0.4) 50%,
+    rgba(228, 238, 247, 0.5) 100%);
   color: white;
   padding: 8rem;
   position: relative;
   text-align: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .quote-navigation {
@@ -435,15 +443,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   background: rgba(228, 238, 247, 0.5); 
   overflow: hidden;
   position: relative;
+  height: 30vh;
 }
 
 .partners-container h2 {
   font-weight: 600;
   font-size: xx-large;
-  padding-top: 10px;
+  font-size: 2.5rem;
 }
 
 .slider {
