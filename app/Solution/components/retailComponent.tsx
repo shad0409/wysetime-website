@@ -24,20 +24,20 @@ const RetailComponent = () => {
             <Image src={heroImage} alt="Empower Your Business" layout='fill' objectFit='cover' />
             <div className="solution-comp-content">
                 <h1>Retail Intelligence</h1>
-            </div>
-        </div>
-        <div className='solution-about-content'>
-        {solutions
-        .filter((solution) => solution.name === 'Retail-Intelligence')
-        .map((solution) => (
-          <div key={solution._id} className='border border-grey-500 rounded-lg flex'>
-            <div className='solution-content'>
-            <PortableText value={solution.content} />
-            </div>
-          </div>
-        ))}
-            <div className='py-5'> 
-              <a href="/Solution/Retail" className="solution-learn-more">Learn More</a>
+                <div className='solution-about-content'>
+                  {solutions
+                  .filter((solution) => solution.name === 'Retail-Intelligence')
+                  .map((solution) => (
+                    <div key={solution._id} className='border border-grey-500 rounded-lg flex'>
+                      <div className='solution-content'>
+                      <PortableText value={solution.content} />
+                      </div>
+                    </div>
+                  ))}
+                      <div className='py-5'> 
+                        <a href="/Solution/Retail" className="solution-learn-more">Learn More</a>
+                      </div>
+                  </div>
             </div>
         </div>
     </div>

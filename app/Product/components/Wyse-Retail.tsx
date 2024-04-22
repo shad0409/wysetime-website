@@ -3,6 +3,7 @@ import { Project } from '@/types/Product';
 import React, { useEffect, useState } from 'react';
 import Products from './ProductsConfig';
 
+import ProductsImage2 from '../../../public/retail_gif.gif';
 import { Image } from 'next-sanity/image';
 import { PortableText } from 'next-sanity';
 
@@ -18,27 +19,16 @@ const AboutProducts3: React.FC = () => {
     fetchProjects();
   }, []); 
 
+  const Product2 = projects.find(projects => projects.name === 'Wyse-Retail')?.content;
+
   return (
     <div className="products-container3">
       <h2 className='product-heading'>Wyse <span className="text-red-600">Retail</span></h2>
-      {projects
-        .filter((project) => project.name === 'Wyse-Retail')
-        .map((project) => (
-          <div key={project._id} className='border border-grey-500 rounded-lg flex'>
-            {project.image && (
-              <Image
-                src={project.image}
-                alt={project.name}
-                width={500}
-                height={500}
-                className="object-cover rounded-lg border border-gray-500"
-              />
-            )}
-            <div className='product-content'>
-            <PortableText value={project.content} />
-            </div>
-          </div>
-        ))}
+      <Products 
+        image={ProductsImage2}
+        description={Product2}
+        reverse={true}
+      />
     </div>
   );
 };

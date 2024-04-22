@@ -2,8 +2,10 @@ import {getProjects} from '@/sanity/sanity-utils'
 import { Project } from '@/types/Product';
 import React, { useEffect, useState } from 'react';
 
+import ProductsImage1 from '../../../public/traffic_gif.gif';
 import { Image } from 'next-sanity/image';
 import { PortableText } from 'next-sanity';
+import Products from './ProductsConfig';
 
 const AboutProducts1: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -17,27 +19,16 @@ const AboutProducts1: React.FC = () => {
     fetchProjects();
   }, []); 
 
+  const Product1 = projects.find(projects => projects.name === 'Wyse-Traffic')?.content;
+
   return (
     <div className="products-container1">
       <h2 className='product-heading'>Wyse <span className="text-red-600">Traffic</span></h2>
-      {projects
-        .filter((project) => project.name === 'Wyse-Traffic')
-        .map((project) => (
-          <div key={project._id} className='border border-grey-500 rounded-lg flex'>
-            {project.image && (
-              <Image
-                src={project.image}
-                alt={project.name}
-                width={500}
-                height={500}
-                className="object-cover rounded-lg border border-gray-500"
-              />
-            )}
-            <div className='product-content'>
-            <PortableText value={project.content} />
-            </div>
-          </div>
-        ))}
+      <Products 
+        image={ProductsImage1}
+        description={Product1}
+        reverse={true}
+      />
     </div>
   );
 };
