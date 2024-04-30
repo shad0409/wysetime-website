@@ -33,7 +33,7 @@ export default function RootLayout({
       <Navbar/>
       <ParticlesContainer/>
         <div className="wrapper">
-        <main className="relative z-10 min-h-screen">{children}</main>
+        <main className="relative min-h-screen">{children}</main>
         </div>
       </body>
     </html>
