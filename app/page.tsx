@@ -16,6 +16,8 @@ import QuoteComponent from './Home/Quote';
 import OurPartners from './Home/Partners';
 import Footer from './Footer';
 import { partners } from './Home/types/partner';
+import HeroWyseTime2 from './HomeV2/Hero';
+import Partners from './HomeV2/Partners';
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -27,11 +29,11 @@ export default function Home() {
   return (
     <>
       <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
-        <HeroWyseTime />
+        <HeroWyseTime2 />
       </header>
       <section>
         <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-          <AboutWyseTime />
+          <Partners />
         </div>
         <div className={` ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
           <ServicesWyseTime />
