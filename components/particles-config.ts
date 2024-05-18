@@ -4,7 +4,7 @@ const particlesConfig: RecursivePartial<ISourceOptions> = {
   autoPlay: true,
   background: {
     color: {
-      value: "#e3e3e3"
+      value: "#ffffff"
     },
     image: "",
     position: "",

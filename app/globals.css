@@ -38,49 +38,6 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-#textblock {
-  background-color: #210002;
-  height: 100vh;
-}
-
-#textblock-container {
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 70px;
-}
-
-#textblock-title {
-  color: #ffaf1b;
-  font-size: 35px;
-  font-weight: 600;
-  font-family: "Helvetica Neue";
-}
-
-#textblock-content {
-  color: #ffaf1b;
-  font-size: 20px;
-}
-
-#textblock-footer {
-  color: #ffaf1b;
-  font-size: 15px;
-  font-weight: 400;
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  margin-bottom: 20px;
-}
-
-#textblock-devsense {
-  text-decoration: none;
-  color: #ffaf1b;
-  font-size: 15px;
-  font-weight: 600;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -323,19 +280,113 @@ body {
 }
 
 .partners-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 100px;
 }
 
 .partners-logos {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .partner-logo {
-  height: 150px;  /* Adjust size as needed */
+  height: 150px;  
   width: auto;
+}
+
+/* Info Section (How It Works) */
+.how-it-works-container {
+  text-align: center;
+  padding: 50px 20px; 
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+.how-it-works-container h2 {
+  font-size: 32px; 
+  font-weight: 600;
+  margin-bottom: 40px; 
+}
+
+.steps {
+  display: flex;
+  justify-content: center; 
+  gap: 500px; 
+  align-items: center;
+}
+
+.step {
+  flex: 1;
+  max-width: 200px; 
+  text-align: center;
+}
+
+.step img {
+  margin-bottom: 20px; 
+}
+
+.step p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Productivity Section */
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section .highlight {
+  color: red;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.feature {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: red;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  width: 200px; /* Set a fixed width for all feature boxes */
+  height: 60px; /* Set a fixed height for all feature boxes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section p {
+  font-size: 16px;
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 20px;
 }
 
 /* Services */
