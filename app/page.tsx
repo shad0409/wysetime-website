@@ -5,17 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import "./globals.css";
 
 // Individual Components
-import HeroWyseTime from './Home/Hero'; 
-
-import AboutWyseTime from './Home/About';
-
-import ServicesWyseTime from './Home/Services';
-
-import QuoteComponent from './Home/Quote';
-
-import OurPartners from './Home/Partners';
 import Footer from './Footer';
-import { partners } from './Home/types/partner';
 import HeroWyseTime2 from './HomeV2/Hero';
 import Partners from './HomeV2/Partners';
 import HowItWorks from './HomeV2/Info';

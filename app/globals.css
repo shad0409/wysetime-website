@@ -75,93 +75,6 @@ body {
   overflow-y: auto; 
 }
 
-/* About Section Styling */
-.about-description-container,
-.about-item-container {
-  background: rgba(227, 227, 227, 0.2); 
-}
-
-.about-description-container {
-  max-width: 2600px;
-  padding: 5px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  margin-top: 50px;
-  height: 70vh;
-}
-
-.about-description-container h1 {
-  font-weight: 600;
-  font-size: 2.5rem; /* Adjust font size for h1 */
-  margin-top: -50px;
-}
-
-.about-description-container p {
-  font-weight: 200;
-  font-size: 1.25rem; /* Adjust font size for paragraphs */
-}
-
-.about-items-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 60px;
-  margin: 0 auto;
-  max-width: 2100px;
-  padding-top: 20px;
-}
-
-.about-items-container h2 {
-  background: rgba(0, 0, 0, 0); 
-  color: inherit; 
-  font-weight: 400;
-  font-size: 1.5rem; /* Adjust font size for h2 */
-  padding-top: 5px;
-}
-
-.about-items-container p {
-  font-weight: 200;
-  font-size: 1.25rem; /* Adjust font size for paragraphs */
-  padding-top: 5px;
-}
-
-.about-item-container {
-  width: 30%;
-  min-width: 250px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin-bottom: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1920px) {
-  .about-description-container {
-    max-width: 1800px; /* Limit width for large screens */
-    margin: 100px auto; /* Center vertically and horizontally */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-  }
-
-  .about-items-container {
-    flex-direction: column;
-  }
-
-  .about-item-container {
-    width: 100%;
-    margin: 20px 0;
-  }
-}
-
 /* Hero */
 .hero-container {
   display: flex;
@@ -656,6 +569,11 @@ body {
   background-color: rgba(230, 230, 230, 0.5);
 }
 
+.industries-section-individual {
+  text-align: center;
+  padding: 20px;
+}
+
 .section-title {
   font-size: 32px;
   font-weight: 600;
@@ -975,7 +893,6 @@ body {
   margin-bottom: 5px;
 }
 
-
 /* Animation */
 section {
   font-size: 1.3rem;
@@ -1011,118 +928,127 @@ html {
   animation-fill-mode: both;
 }
 
-/* Learn More Pages */
-.learn-more-container {
-  background: rgba(227, 227, 227, 0.2); 
-}
-
-.learn-more-container {
-  max-width: 2600px;
-  padding: 200px;
-  text-align: center;
+/* Products Info Page */
+.info-section {
+  background-color: rgba(230, 230, 230, 0.5);
+  padding: 100px 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  height: 45vh; 
-
-}
-
-.learn-more-container h1 {
-  font-weight: 600;
-  font-size: xxx-large;
-  margin-top: -50px;
-}
-
-.learn-more-container p {
-  font-weight: 200;
-  font-size: large;
-}
-
-.about-learn-more {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 40px;
-}
-
-/* Case Studies */
-.case-container {
-  max-width: 2600px;
-  margin: 0 auto;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
-.case-container h2 {
-  font-weight: 600;
+.info-content {
+  max-width: 1800px; /* Adjust the max-width as needed */
+  text-align: left; /* Align text to the left */
 }
 
-.case-heading {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
+.info-title {
+  color: #d82020; /* Red color for the title */
+  font-size: 32px; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.case {
-  display: grid;
+.info-description {
+  color: #333333; /* Dark gray color for the description */
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 20px;
+}
+
+.info-button-link {
+  display: inline-block;
+  background-color: #d82020; /* Red background for the button */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.info-button-link:hover {
+  background-color: #b71c1c; /* Darker red when hovered */
+}
+
+/* WyseTraffic Individual Page */
+.product-left-section {
+  display: flex;
   align-items: center;
-  gap: 20px;
-  margin: 1rem 0;
-  justify-items: center; 
+  justify-content: space-between;
+  padding: 100px;
 }
 
-.case:not(.reverse) {
-  grid-template-columns: 1fr 1fr;
-  padding-left: 200px;
+.product-left-content {
+  flex: 1;
+  max-width: 30%;
+  padding-right: 20px;
+  margin-left: 300px;
 }
 
-.case.reverse {
-  grid-template-columns: 1fr 1fr;
-  padding-right: 200px;
+.product-left-title {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
-.case-image.reverse{
-  width: 100%;
+.product-left-description {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
 }
 
-.case-content h3 {
-  font-weight: 400;
-  font-size: xx-large;
-  padding-bottom: 10px;
+.product-left-image {
+  flex: 1;
+  max-width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 300px;
 }
 
-.case-content p {
-  font-weight: 200;
-  font-size: large;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 50px;
+.product-left-image img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-  .case-container {
-    height: auto;
-  }
+.product-right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+}
 
-  .case, .case.reverse {
-    display: block;
-    text-align: center;
-  }
-  .case-content, .case-image {
-    max-width: 100%;
-    width: 100%; 
-    padding: 0px;
-    text-align: center;
-    margin: 0 auto; 
-  }
-  .case-image {
-    max-width: 400px;
-    margin-bottom: 1rem;
-  }
-  .case-content p {
-    font-size: 0.8rem;
-  }
+.product-right-content {
+  flex: 1;
+  max-width: 30%;
+  padding-right: 20px;
+  margin-right: 300px;
+}
+
+.product-right-title {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.product-right-description {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+}
+
+.product-right-image {
+  flex: 1;
+  max-width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.product-right-image img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
 }
