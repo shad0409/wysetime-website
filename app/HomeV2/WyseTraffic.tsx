@@ -23,7 +23,7 @@ const WyseTraffic = () => {
       <div className="header">
         <h1>Our <span>Vision AI</span> Application</h1>
       </div>
-      <div className="content">
+      <div className="wyse-product-content">
         <div className="left-content">
           <h2>WyseTraffic</h2>
           <div className="divider"></div>
@@ -56,7 +56,7 @@ const WyseTraffic = () => {
               layout='fill'
               objectFit='cover'   
             />
-            <a href="/new-page" className="view-more">View More</a> {/* Update this to the correct URL */}
+            <a href="/WyseTraffic" className="view-more">View More</a> {/* Update this to the correct URL */}
           </div>
         </div>
       </div>

@@ -22,25 +22,23 @@ const WyseRetail = () => {
     <div className="wyse-retail">
       <div className="header">
       </div>
-      <div className="content">
-        <div className="left-content">
-          <h2>WyseRetail</h2>
-          <div className="divider"></div>
-          <p>
-            WyseRetail stands as a premier people counting solution, crafted to monitor, follow, and evaluate your customer flow, delivering analytical insights crucial for your marketing and operations teams.
-          </p>
-          <div className="divider"></div>
-          <p>
-            Detect essential customer behaviors like visit frequency, engagement duration, and queuing patterns. By gaining a deeper insight into your customers experiences, you can consistently prioritize their needs.
-          </p>
-        </div>
-        <div className="right-content">
-          <div className="tabs">
-            <div className="tab-titles">
+      <div className="retail-content">
+        <div className="retail-right-content">
+          <div className="retail-tab-content">
+            <Image 
+              src={images[selectedTab].src} 
+              alt={images[selectedTab].alt}
+              layout='fill'
+              objectFit='cover'   
+            />
+            <a href="/WyseRetail" className="retail-view-more">View More</a> {/* Update this to the correct URL */}
+          </div>
+          <div className="retail-tabs">
+            <div className="retail-tab-titles">
               {images.map((image, index) => (
                 <div 
                   key={image.id} 
-                  className={`tab-title ${selectedTab === index ? 'active' : ''}`}
+                  className={`retail-tab-title ${selectedTab === index ? 'active' : ''}`}
                   onClick={() => setSelectedTab(index)}
                 >
                   {image.alt}
@@ -48,15 +46,17 @@ const WyseRetail = () => {
               ))}
             </div>
           </div>
-          <div className="tab-content">
-            <Image 
-              src={images[selectedTab].src} 
-              alt={images[selectedTab].alt}
-              layout='fill'
-              objectFit='cover'   
-            />
-            <a href="/new-page" className="view-more">View More</a> {/* Update this to the correct URL */}
-          </div>
+        </div>
+        <div className="retail-left-content">
+          <h2>WyseRetail</h2>
+          <div className="retail-divider"></div>
+          <p>
+            WyseRetail stands as a premier people counting solution, crafted to monitor, follow, and evaluate your customer flow, delivering analytical insights crucial for your marketing and operations teams.
+          </p>
+          <div className="retail-divider"></div>
+          <p>
+            Detect essential customer behaviors like visit frequency, engagement duration, and queuing patterns. By gaining a deeper insight into your customers experiences, you can consistently prioritize their needs.
+          </p>
         </div>
       </div>
     </div>

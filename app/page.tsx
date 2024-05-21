@@ -23,8 +23,15 @@ export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [quoteRef, quoteInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [partnersRef, partnersInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [productivityRef, productivityInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [wyseTrafficRef, wyseTrafficInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [wyseRetailRef, wyseRetailInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [wyseSafetyRef, wyseSafetyInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [dashboardSectionRef, dashboardSectionInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [industriesSectionRef, industriesSectionInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [whyChooseWyseTimeRef, whyChooseWyseTimeInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [securitySectionRef, securitySectionInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <>
@@ -38,31 +45,31 @@ export default function Home() {
         <div className={` ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
           <HowItWorks />
         </div>
-        <div className={` ${quoteInView ? 'fadeInUp' : ''}`} ref={quoteRef}>
-          <Productivity/>
+        <div className={` ${productivityInView ? 'fadeInUp' : ''}`} ref={productivityRef}>
+          <Productivity />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${wyseTrafficInView ? 'fadeInUp' : ''}`} ref={wyseTrafficRef}>
           <WyseTraffic />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${wyseRetailInView ? 'fadeInUp' : ''}`} ref={wyseRetailRef}>
           <WyseRetail />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${wyseSafetyInView ? 'fadeInUp' : ''}`} ref={wyseSafetyRef}>
           <WyseSafety />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${dashboardSectionInView ? 'fadeInUp' : ''}`} ref={dashboardSectionRef}>
           <DashboardSection />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${industriesSectionInView ? 'fadeInUp' : ''}`} ref={industriesSectionRef}>
           <IndustriesSection />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${whyChooseWyseTimeInView ? 'fadeInUp' : ''}`} ref={whyChooseWyseTimeRef}>
           <WhyChooseWyseTime />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${securitySectionInView ? 'fadeInUp' : ''}`} ref={securitySectionRef}>
           <SecuritySection />
         </div>
-        <div className={` ${partnersInView ? 'fadeInUp' : ''}`} ref={partnersRef}>
+        <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>
           <Contact />
         </div>
       </section>

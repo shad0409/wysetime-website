@@ -32,18 +32,18 @@ function Footer() {
           <div className="footer-column">
             <h3 className="footer-heading">Products</h3>
             <ul className="footer-list">
-              <li>Wyse-Traffic</li>
-              <li>Wyse-Retail</li>
-              <li>Wyse-Safety</li>
+              <li><a href="/WyseTraffic">Wyse-Traffic</a></li>
+              <li><a href="/WyseRetail">Wyse-Retail</a></li>
+              <li><a href="/WyseSafety">Wyse-Safety</a></li>
             </ul>
           </div>
           <div className="footer-column">
             <h3 className="footer-heading">Company</h3>
             <ul className="footer-list">
-              <li>Home</li>
-              <li>Industries</li>
-              <li>Customization</li>
-              <li>Contact Us</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/Industries">Industries</a></li>
+              <li><a href="/Customization">Customization</a></li>
+              <li><a href="/Contact">Contact Us</a></li>
             </ul>
           </div>
         </div>

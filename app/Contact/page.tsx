@@ -20,8 +20,6 @@ export default function Home() {
       <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
         <Contact />
       </header>
-      <section>
-      </section>
       <footer className=''>
         <Footer />
       </footer>

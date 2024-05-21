@@ -22,7 +22,7 @@ const WyseSafety = () => {
     <div className="wyse-safety">
       <div className="header">
       </div>
-      <div className="content">
+      <div className="wyse-product-content">
         <div className="left-content">
           <h2>WyseSafety</h2>
           <div className="divider"></div>
@@ -55,7 +55,7 @@ const WyseSafety = () => {
               layout='fill'
               objectFit='cover'   
             />
-            <a href="/new-page" className="view-more">View More</a> {/* Update this to the correct URL */}
+            <a href="/WyseSafety" className="view-more">View More</a> {/* Update this to the correct URL */}
           </div>
         </div>
       </div>

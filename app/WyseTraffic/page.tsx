@@ -1,5 +1,5 @@
 'use client'
-import {getProjects} from '@/sanity/sanity-utils'
+import { getProjects } from '@/sanity/sanity-utils'
 import { useInView } from 'react-intersection-observer';
 
 import "../globals.css";
@@ -10,42 +10,43 @@ import TrafficDataAnalytic from './components/TrafficData';
 import TrafficJunctionAnalytic from './components/TrafficJunction';
 import PedestrianMonitoring from './components/Pedestrian';
 import TrafficFlowImprovement from './components/TrafficFlow';
-import Contact from '../HomeV2/Contact';
-
-// Individual Components
+import Contact from './components/Contact';
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [quoteRef, quoteInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [partnersRef, partnersInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [infoRef, infoInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [vehicleRef, vehicleInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [trafficDataRef, trafficDataInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [trafficJunctionRef, trafficJunctionInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [pedestrianRef, pedestrianInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [trafficFlowRef, trafficFlowInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <>
       <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
       </header>
       <section>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <Info />
+        <div className={` ${infoInView ? 'fadeInUp' : ''}`} ref={infoRef}>
+          <Info />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <Vehicle />
+        <div className={` ${vehicleInView ? 'fadeInUp' : ''}`} ref={vehicleRef}>
+          <Vehicle />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <TrafficDataAnalytic />
+        <div className={` ${trafficDataInView ? 'fadeInUp' : ''}`} ref={trafficDataRef}>
+          <TrafficDataAnalytic />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <TrafficJunctionAnalytic />
+        <div className={` ${trafficJunctionInView ? 'fadeInUp' : ''}`} ref={trafficJunctionRef}>
+          <TrafficJunctionAnalytic />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <PedestrianMonitoring />
+        <div className={` ${pedestrianInView ? 'fadeInUp' : ''}`} ref={pedestrianRef}>
+          <PedestrianMonitoring />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <TrafficFlowImprovement />
+        <div className={` ${trafficFlowInView ? 'fadeInUp' : ''}`} ref={trafficFlowRef}>
+          <TrafficFlowImprovement />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <Contact />
+        <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>
+          <Contact />
         </div>
       </section>
       <footer className=''>

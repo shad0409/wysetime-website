@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import Image from 'next/image';
-import wyseTimeLogo from '../../public/WyseLogo.png'; // Path to your WyseTime logo
-import emailIcon from '../../public/whatsapp-black.jpg'; // Path to your email icon
-import phoneIcon from '../../public/EmailIcon-removebg-preview.png'; // Path to your phone icon
+import wyseTimeLogo from '../../../public/WyseLogo.png';
+import emailIcon from '../../../public/whatsapp-black.jpg';
+import phoneIcon from '../../../public/EmailIcon-removebg-preview.png';
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("xrgnjppv");
@@ -19,11 +19,11 @@ const Contact = () => {
     };
   
     return (
-      <div className="contact-section">
+      <div className="contact-section-individual">
         <div className="contact-info">
           <Image src={wyseTimeLogo} alt="WyseTime Logo" className="wysetime-logo" />
           <h2>Contact Us</h2>
-          <h3>To schedule a product demo with our product consultants, please fill in your contact details</h3>
+          <p>To schedule a product demo with our product consultants, please fill in your contact details</p>
           <div className="contact-method">
             <Image src={emailIcon} alt="Email Icon" className="contact-icon" />
             <p>info@wysetime.com</p>

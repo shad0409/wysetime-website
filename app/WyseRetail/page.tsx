@@ -1,52 +1,52 @@
 'use client'
-import {getProjects} from '@/sanity/sanity-utils'
+import { getProjects } from '@/sanity/sanity-utils'
 import { useInView } from 'react-intersection-observer';
 
 import "../globals.css";
 import Footer from '../Footer';
 import Info from './components/Info';
-
-import Contact from '../HomeV2/Contact';
 import People from './components/PeopleCounting';
 import HeatMapAnalytics from './components/HeatMap';
 import StoreAnalytic from './components/Store';
 import QueueManagement from './components/Queue';
 import AgeGenderAnalytics from './components/AgeGender';
-
-// Individual Components
+import Contact from './components/Contact';
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [quoteRef, quoteInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [partnersRef, partnersInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [infoRef, infoInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [peopleRef, peopleInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [heatMapRef, heatMapInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [storeRef, storeInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [queueRef, queueInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ageGenderRef, ageGenderInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
     <>
       <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
       </header>
       <section>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <Info />
+        <div className={` ${infoInView ? 'fadeInUp' : ''}`} ref={infoRef}>
+          <Info />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <People />
+        <div className={` ${peopleInView ? 'fadeInUp' : ''}`} ref={peopleRef}>
+          <People />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <HeatMapAnalytics />
+        <div className={` ${heatMapInView ? 'fadeInUp' : ''}`} ref={heatMapRef}>
+          <HeatMapAnalytics />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <StoreAnalytic />
+        <div className={` ${storeInView ? 'fadeInUp' : ''}`} ref={storeRef}>
+          <StoreAnalytic />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <QueueManagement />
+        <div className={` ${queueInView ? 'fadeInUp' : ''}`} ref={queueRef}>
+          <QueueManagement />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <AgeGenderAnalytics />
+        <div className={` ${ageGenderInView ? 'fadeInUp' : ''}`} ref={ageGenderRef}>
+          <AgeGenderAnalytics />
         </div>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
-         <Contact />
+        <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>
+          <Contact />
         </div>
       </section>
       <footer className=''>
