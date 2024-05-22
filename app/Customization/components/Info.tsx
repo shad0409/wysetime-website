@@ -14,7 +14,7 @@ const Custom: React.FC = () => {
                 Our specialized AI and computer vision technologies are designed to meet the unique needs of multiple sectors. We enabled companies in healthcare, manufacturing, logistics, waste management, and retail to leverage the transformative capabilities of AI and computer vision.                </p>
             </div>
             <div className="customization-image-container">
-                <Image src={customizationImage} alt="customization" className="customization-image" layout="fill" objectFit="cover" objectPosition="center" />
+                <Image src={customizationImage} alt="customization" className="customization-image" layout="responsive" objectFit="contain" objectPosition="center" />
             </div>
         </section>
     );

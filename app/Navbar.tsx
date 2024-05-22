@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className='navbar bg-gray-300'>
-        <div className='max-w-10xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='max-w-10xl mx-auto px-4 sm:px-6 lg:px-4'>
           <div className='flex items-center justify-between h-16'>
             <div className='flex items-center'>
               <div className='flex-shrink-0'>
@@ -35,7 +35,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className='hidden md:block'>
-              <div className='ml-4 flex items-center space-x-12'>
+              <div className='ml-4 flex items-center space-x-8'>
                 <a href="/WyseTraffic" 
                   className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/WyseTraffic') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/WyseTraffic')}>
