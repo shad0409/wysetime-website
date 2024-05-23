@@ -6,6 +6,7 @@ import ZoneControl from '../../public/zone-control-ezgif.com-video-to-gif-conver
 import BehavioralDetection from '../../public/pb-ppl-bodypose-ezgif.com-video-to-gif-converter.gif';
 import OccupancyMetrics from '../../public/occupancy-ezgif.gif';
 import SmokeFire from '../../public/fire-ezgif.com-video-to-gif-converter.gif';
+import { useInView } from 'react-intersection-observer';
 
 const images = [
   { id: 0, src: PPEDetection, alt: 'PPE Detection' },
@@ -16,6 +17,7 @@ const images = [
 ];
 
 const WyseSafety = () => {
+  const [animationRef, animationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
@@ -23,7 +25,7 @@ const WyseSafety = () => {
       <div className="header">
       </div>
       <div className="wyse-product-content">
-        <div className="left-content">
+        <div className={` left-content ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
           <h2>WyseSafety</h2>
           <div className="divider"></div>
           <p>
@@ -34,7 +36,7 @@ const WyseSafety = () => {
             This solution detects safety protocol breaches, unauthorized access, and improper vehicle use, ensuring a secure and well-regulated environment. Elevate your safety standards with WyseSafety.
           </p>
         </div>
-        <div className="right-content">
+        <div className={` right-content ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
           <div className="tabs">
             <div className="tab-titles">
               {images.map((image, index) => (

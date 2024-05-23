@@ -35,38 +35,38 @@ export default function Home() {
 
   return (
     <>
-      <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
+      <header>
         <HeroWyseTime2 />
       </header>
       <section>
-        <div className={` ${aboutInView ? 'fadeInUp' : ''}`} ref={aboutRef}>
+        <div>
           <Partners />
         </div>
-        <div className={` ${servicesInView ? 'fadeInUp' : ''}`} ref={servicesRef}>
+        <div>
           <HowItWorks />
         </div>
-        <div className={` ${productivityInView ? 'fadeInUp' : ''}`} ref={productivityRef}>
+        <div>
           <Productivity />
         </div>
-        <div className={` ${wyseTrafficInView ? 'fadeInUp' : ''}`} ref={wyseTrafficRef}>
+        <div>
           <WyseTraffic />
         </div>
-        <div className={` ${wyseRetailInView ? 'fadeInUp' : ''}`} ref={wyseRetailRef}>
+        <div>
           <WyseRetail />
         </div>
-        <div className={` ${wyseSafetyInView ? 'fadeInUp' : ''}`} ref={wyseSafetyRef}>
+        <div>
           <WyseSafety />
         </div>
-        <div className={` ${dashboardSectionInView ? 'fadeInUp' : ''}`} ref={dashboardSectionRef}>
+        <div>
           <DashboardSection />
         </div>
-        <div className={` ${industriesSectionInView ? 'fadeInUp' : ''}`} ref={industriesSectionRef}>
+        <div>
           <IndustriesSection />
         </div>
-        <div className={` ${whyChooseWyseTimeInView ? 'fadeInUp' : ''}`} ref={whyChooseWyseTimeRef}>
+        <div>
           <WhyChooseWyseTime />
         </div>
-        <div className={` ${securitySectionInView ? 'fadeInUp' : ''}`} ref={securitySectionRef}>
+        <div>
           <SecuritySection />
         </div>
         <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>

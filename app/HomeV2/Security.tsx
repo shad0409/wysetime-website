@@ -1,11 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import securityImage from '../../public/privacy.gif'; // Adjust the path if necessary
+import { useInView } from 'react-intersection-observer';
 
 const SecuritySection: React.FC = () => {
+    const [animationRef, animationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
+
     return (
         <section className="security-section">
-            <div className="security-content">
+            <div className={` security-content ${animationInView ? 'fadeInUp' : ''}`} ref={animationRef}>
                 <h2 className="security-title">
                     Privacy & Security
                 </h2>

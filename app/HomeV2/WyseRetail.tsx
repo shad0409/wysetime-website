@@ -6,6 +6,7 @@ import Heatmap from '../../public/retail_analytics_solutions_by_datafromsky_-_co
 import StoreAnalytics from '../../public/store_video-ezgif.gif';
 import QueueManagement from '../../public/queue_management.jpeg';
 import AgeGender from '../../public/Age_Gender.jpg';
+import { useInView } from 'react-intersection-observer';
 
 const images = [
   { id: 0, src: PeopleCounting, alt: 'People Counting' },
@@ -16,6 +17,7 @@ const images = [
 ];
 
 const WyseRetail = () => {
+  const [animationRef, animationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
@@ -23,7 +25,7 @@ const WyseRetail = () => {
       <div className="header">
       </div>
       <div className="retail-content">
-        <div className="retail-right-content">
+        <div className={` retail-right-content ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
           <div className="retail-tab-content">
             <Image 
               src={images[selectedTab].src} 
@@ -47,7 +49,7 @@ const WyseRetail = () => {
             </div>
           </div>
         </div>
-        <div className="retail-left-content">
+        <div className={` retail-left-content ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
           <h2>WyseRetail</h2>
           <div className="retail-divider"></div>
           <p>

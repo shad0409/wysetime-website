@@ -6,6 +6,7 @@ import TrafficData from '../../public/trafficmonitoring-ezgif.gif';
 import TrafficJunction from '../../public/traffic_junction1-ezgif.gif';
 import Pedestrian from '../../public/pedestrianmonitoring-ezgif.gif';
 import TrafficFlow from '../../public/trafficflowimprovement-ezgif.gif';
+import { useInView } from 'react-intersection-observer';
 
 const images = [
   { id: 0, src: VehicleCounting, alt: 'Vehicle Counting' },
@@ -16,6 +17,7 @@ const images = [
 ];
 
 const WyseTraffic = () => {
+  const [animationRef, animationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
@@ -24,7 +26,7 @@ const WyseTraffic = () => {
         <h1>Our <span>Vision AI</span> Application</h1>
       </div>
       <div className="wyse-product-content">
-        <div className="left-content">
+        <div className={` left-content ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
           <h2>WyseTraffic</h2>
           <div className="divider"></div>
           <p>
@@ -35,7 +37,7 @@ const WyseTraffic = () => {
             Detect vehicle classes, vehicle moving direction, people’s movement patterns, spot undesirable events and discover how your local active transportation evolves over time.
           </p>
         </div>
-        <div className="right-content">
+        <div className={` right-content ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
           <div className="tabs">
             <div className="tab-titles">
               {images.map((image, index) => (
