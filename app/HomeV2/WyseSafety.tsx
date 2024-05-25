@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import PPEDetection from '../../public/ppe-ezgif.gif';
 import ZoneControl from '../../public/zone-control-ezgif.com-video-to-gif-converter.gif';
@@ -19,6 +19,14 @@ const images = [
 const WyseSafety = () => {
   const [animationRef, animationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedTab, setSelectedTab] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedTab(prevTab => (prevTab + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="wyse-safety">

@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="contact-info">
           <Image src={wyseTimeLogo} alt="WyseTime Logo" className="wysetime-logo" />
           <h2>Contact Us</h2>
-          <p>To schedule a product demo with our product consultants, please fill in your contact details</p>
+          <h3>To schedule a product demo with our product consultants, please fill in your contact details</h3>
           <div className="contact-method">
             <Image src={emailIcon} alt="Email Icon" className="contact-icon" />
             <p>info@wysetime.com</p>

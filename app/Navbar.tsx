@@ -25,52 +25,57 @@ export default function Navbar() {
   return (
     <div>
       <nav className='navbar bg-gray-300'>
-        <div className='max-w-10xl mx-auto px-4 sm:px-6 lg:px-4'>
-          <div className='flex items-center justify-between h-16'>
+        <div className='max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 h-20'>
+          <div className='flex items-center justify-between h-full'>
             <div className='flex items-center'>
               <div className='flex-shrink-0'>
                 <Link href="/" onClick={() => handleLinkClick('/')}>
-                  <Image src={Logo} width={150} height={250} placeholder='blur' alt="logo" />
+                  <Image src={Logo} width={250} height={100} placeholder='blur' alt="logo" />
                 </Link>
               </div>
             </div>
-            <div className='hidden md:block'>
-              <div className='ml-4 flex items-center space-x-8'>
+            <div className='hidden lg:flex items-center justify-center'>
+              <div className='ml-4 flex items-center space-x-12'>
                 <a href="/WyseTraffic" 
-                  className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/WyseTraffic') ? 'text-red-500' : ''}`}
+                  className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseTraffic') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/WyseTraffic')}>
                   WyseTraffic
                 </a>
                 <a href="/WyseRetail" 
-                  className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/WyseRetail') ? 'text-red-500' : ''}`}
+                  className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseRetail') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/WyseRetail')}>
                   WyseRetail
                 </a>
                 <a href="/WyseSafety" 
-                  className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/WyseSafety') ? 'text-red-500' : ''}`}
+                  className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseSafety') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/WyseSafety')}>
                   WyseSafety
                 </a>
                 <a href="/Industries" 
-                  className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/Industries') ? 'text-red-500' : ''}`}
+                  className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Industries') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/Industries')}>
                   Industry
                 </a>
                 <a href="/Customization" 
-                  className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/Customization') ? 'text-red-500' : ''}`}
+                  className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Customization') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/Customization')}>
                   Customization
                 </a>
+                <a href="https://portal.wysetime.com" 
+                  className={`text-red-500 rounded-lg font-bold text-l ${isActive('https://portal.wysetime.com') ? 'text-red-500' : ''}`}
+                  onClick={() => handleLinkClick('https://portal.wysetime.com')}>
+                  Login
+                </a>
                 <a href="/Contact" 
-                  className='bg-red-500 text-white hover:bg-red-600 rounded-lg px-3 py-2 font-bold text-lg'
+                  className='bg-red-500 text-white hover:bg-red-600 rounded-lg px-3 py-2 font-bold text-l'
                   onClick={() => handleLinkClick('/Contact')}>
                   Request Demo
                 </a>
               </div>
             </div>
-            <div className='md:hidden flex items-center'>
+            <div className='lg:hidden flex items-center'>
               <button className='inline-flex items-center justify-center p-2 rounded-md text-black hover:text-black
-                focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
+                focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500'
                 onClick={toggleNavbar}
               >
                 {isClick ? (
@@ -103,35 +108,40 @@ export default function Navbar() {
           </div>
         </div>
         {isClick && (
-          <div className='md:hidden'>
+          <div className='lg:hidden'>
             <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col'>
               <a href="/WyseTraffic" 
-                className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/WyseTraffic') ? 'text-red-500' : ''}`}
+                className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseTraffic') ? 'text-red-500' : ''}`}
                 onClick={() => handleLinkClick('/WyseTraffic')}>
                 WyseTraffic
               </a>
               <a href="/WyseRetail" 
-                className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/WyseRetail') ? 'text-red-500' : ''}`}
+                className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseRetail') ? 'text-red-500' : ''}`}
                 onClick={() => handleLinkClick('/WyseRetail')}>
                 WyseRetail
               </a>
               <a href="/WyseSafety" 
-                className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/WyseSafety') ? 'text-red-500' : ''}`}
+                className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseSafety') ? 'text-red-500' : ''}`}
                 onClick={() => handleLinkClick('/WyseSafety')}>
                 WyseSafety
               </a>
               <a href="/Industries" 
-                className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/Industries') ? 'text-red-500' : ''}`}
+                className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Industries') ? 'text-red-500' : ''}`}
                 onClick={() => handleLinkClick('/Industries')}>
                 Industry
               </a>
               <a href="/Customization" 
-                className={`text-black hover:bg-black hover:text-white rounded-lg font-bold text-lg ${isActive('/Customization') ? 'text-red-500' : ''}`}
+                className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Customization') ? 'text-red-500' : ''}`}
                 onClick={() => handleLinkClick('/Customization')}>
                 Customization
               </a>
+              <a href="https://portal.wysetime.com" 
+                  className={`text-red-500 rounded-lg font-bold text-l ${isActive('https://portal.wysetime.com') ? 'text-red-500' : ''}`}
+                  onClick={() => handleLinkClick('https://portal.wysetime.com')}>
+                  Login
+              </a>
               <a href="/Contact" 
-                className='bg-red-500 text-white hover:bg-red-600 rounded-lg px-3 py-2 font-bold text-lg'
+                className='bg-red-500 text-white hover:bg-red-600 rounded-lg px-3 py-2 font-bold text-l'
                 onClick={() => handleLinkClick('/Contact')}>
                 Request Demo
               </a>

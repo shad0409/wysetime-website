@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import PeopleCounting from '../../public/people-counting-ezgif.gif';
 import Heatmap from '../../public/retail_analytics_solutions_by_datafromsky_-_counts_heatmaps_distancing1080p-ezgif.gif';
@@ -19,6 +19,14 @@ const images = [
 const WyseRetail = () => {
   const [animationRef, animationInView] = useInView({ triggerOnce: true, threshold: 0.1 });
   const [selectedTab, setSelectedTab] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedTab(prevTab => (prevTab + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="wyse-retail">

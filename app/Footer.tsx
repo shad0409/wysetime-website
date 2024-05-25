@@ -9,7 +9,7 @@ function Footer() {
     <div className="footer-container">
       <div className="footer-content">
         <div className="footer-logo-social">
-          <Image src={WyseLogo} alt="WyseTime Logo" width={150} height={50} className="footer-logo" />
+          <Image src={WyseLogo} alt="WyseTime Logo" width={250} height={100} className="footer-logo" />
           <div className="social-icons">
             <a href="https://www.instagram.com/wysetime/" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaInstagram />

@@ -18,6 +18,10 @@ module.exports = {
         'kanit': ['Kanit', 'sans-serif'],
       },
     },
+    screens: {
+      'lg': '1025px',
+      // Add your existing breakpoints here
+    },
   },
   plugins: [],
 }

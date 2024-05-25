@@ -8,14 +8,29 @@ const images = [heroImage, heroImage2, heroImage3];
 
 const HeroWyseTime2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isManualChange, setIsManualChange] = useState(false);
 
   useEffect(() => {
+    if (isManualChange) {
+      setIsManualChange(false);
+      return;
+    }
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentIndex, isManualChange]);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setIsManualChange(true);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setIsManualChange(true);
+  };
 
   return (
     <div className="hero-container">
@@ -28,6 +43,8 @@ const HeroWyseTime2 = () => {
         <div className="hero-image">
           <Image src={images[currentIndex]} alt="Empower Your Business" layout="fill" objectFit="cover" />
         </div>
+        {/* <button className="hero-arrow hero-arrow-left" onClick={handlePrev}>&lt;</button> */}
+        <button className="hero-arrow hero-arrow-right" onClick={handleNext}>&gt;</button>
       </div>
     </div>
   );
