@@ -23,7 +23,7 @@ const WyseSafety = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedTab(prevTab => (prevTab + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -65,7 +65,7 @@ const WyseSafety = () => {
               layout='fill'
               objectFit='cover'   
             />
-            <a href="/WyseSafety" className="view-more">View More</a> {/* Update this to the correct URL */}
+            <a href="/WyseSafety" className="view-more">View More</a>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const WyseRetail = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSelectedTab(prevTab => (prevTab + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -41,7 +41,7 @@ const WyseRetail = () => {
               layout='fill'
               objectFit='cover'   
             />
-            <a href="/WyseRetail" className="retail-view-more">View More</a> {/* Update this to the correct URL */}
+            <a href="/WyseRetail" className="retail-view-more">View More</a>
           </div>
           <div className="retail-tabs">
             <div className="retail-tab-titles">

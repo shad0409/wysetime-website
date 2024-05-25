@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import securityImage from '../../public/privacy.gif'; // Adjust the path if necessary
+import securityImage from '../../public/privacy.gif';
 import { useInView } from 'react-intersection-observer';
 
 const SecuritySection: React.FC = () => {
