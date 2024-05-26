@@ -34,7 +34,7 @@ const WyseTraffic = () => {
         <h1>Our <span>Vision AI</span> Application</h1>
       </div>
       <div className="wyse-product-content">
-        <div className={` left-content ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
+        <div className={`left-content ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
           <h2>WyseTraffic</h2>
           <div className="divider"></div>
           <p>
@@ -45,7 +45,7 @@ const WyseTraffic = () => {
             Detect vehicle classes, vehicle moving direction, people’s movement patterns, spot undesirable events and discover how your local active transportation evolves over time.
           </p>
         </div>
-        <div className={` right-content ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
+        <div className={`right-content ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
           <div className="tabs">
             <div className="tab-titles">
               {images.map((image, index) => (
@@ -63,8 +63,8 @@ const WyseTraffic = () => {
             <Image 
               src={images[selectedTab].src} 
               alt={images[selectedTab].alt}
-              layout='fill'
-              objectFit='cover'   
+              layout="contain"
+              objectFit="contain"   
             />
             <a href="/WyseTraffic" className="view-more">View More</a>
           </div>

@@ -11,7 +11,7 @@ const AgeGenderAnalytics: React.FC = () => {
           Age & Gender Analytics leverages advanced video analytics to identify demographic patterns within your customer base. This intelligence allows for more targeted marketing strategies, product placements, and personalized shopping experiences, ultimately driving sales and customer loyalty.          </p>
         </div>
         <div className="product-left-image">
-          <Image src={AgeGender} alt="Age & Gender Analytics" layout="responsive" width={500} height={300} />
+          <Image src={AgeGender} alt="Age & Gender Analytics" layout="contain" width={300} height={400} />
         </div>
       </section>
     );

@@ -6,7 +6,7 @@ const QueueManagement: React.FC = () => {
     return (
       <section className="product-right-section">
         <div className="product-right-image">
-          <Image src={Queue} alt="Queue Management" layout="responsive" width={500} height={300} />
+          <Image src={Queue} alt="Queue Management" layout="contain" width={250} height={200} />
         </div>
         <div className="product-right-content">
           <h2 className="product-right-title">Queue Management</h2>

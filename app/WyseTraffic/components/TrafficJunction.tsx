@@ -8,7 +8,7 @@ const TrafficJunctionAnalytic: React.FC = () => {
         <div className="product-left-content">
           <h2 className="product-left-title">Traffic Junction Analytics</h2>
           <p className="product-left-description">
-          Traffic Junction Analytic is a specialized platform designed to analyze and improve the functionality of traffic intersections. Monitor TrafficJunctionAnalytic and pedestrian movements, detect traffic signal compliance, and improve junction design for smoother, safer traffic operations.
+          Traffic Junction Analytic is a specialized platform designed to analyze and improve the functionality of traffic intersections. Monitor Traffic Junction Analytics and pedestrian movements, detect traffic signal compliance, and improve junction design for smoother, safer traffic operations.
           </p>
         </div>
         <div className="product-left-image">

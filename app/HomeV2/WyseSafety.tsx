@@ -62,8 +62,8 @@ const WyseSafety = () => {
             <Image 
               src={images[selectedTab].src} 
               alt={images[selectedTab].alt}
-              layout='fill'
-              objectFit='cover'   
+              layout='contain'
+              objectFit='contain'   
             />
             <a href="/WyseSafety" className="view-more">View More</a>
           </div>

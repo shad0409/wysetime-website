@@ -38,8 +38,8 @@ const WyseRetail = () => {
             <Image 
               src={images[selectedTab].src} 
               alt={images[selectedTab].alt}
-              layout='fill'
-              objectFit='cover'   
+              layout='contain'
+              objectFit='contain'   
             />
             <a href="/WyseRetail" className="retail-view-more">View More</a>
           </div>
