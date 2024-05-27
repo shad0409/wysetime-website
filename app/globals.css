@@ -2415,7 +2415,7 @@ html {
 
 .contact-info p {
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 300;
   margin: 20px 0 30px;
 }
 
@@ -2603,14 +2603,13 @@ html {
 @media (max-width: 768px) {
   .contact-section, .contact-section-individual {
     flex-direction: column;
-    align-items: center;
     height: auto;
-    padding: 10px;
+    padding: 20px;
   }
 
   .wysetime-logo {
-    margin-top: 75px;
-    max-width: 50%; /* Reduce the size of the logo */
+    margin-top: 15px;
+    max-width: 60%; /* Reduce the size of the logo */
     height: auto;
   }
 
@@ -2637,15 +2636,35 @@ html {
 
   .contact-info p {
     font-size: 16px;
+    font-weight: 300;
   }
 
   .contact-form-container {
-    margin: 0;
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
     max-width: 100%;
+    height: auto;
+    margin-right: 300px;
+    margin: 0;
+    width: 500px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
   
   .contact-form input,
   .contact-form textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 16px;
   }
 
@@ -2781,6 +2800,7 @@ html {
 
   .social-icon {
     font-size: 20px;
+    margin-right: 20px;
   }
 
   .footer-heading {
@@ -2883,12 +2903,13 @@ html {
 
   .social-icons {
     margin-bottom: 15px;
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   .address, .copyright {
     margin-bottom: 30px;
     font-size: 10px;
+    font-weight: 400;
     width: 80%;
   }
 
@@ -2923,13 +2944,13 @@ html {
   }
 
   .footer-logo {
-    height: 50px;
+    height: 70px;
     margin-bottom: 5px;
-    margin-top: -20px;
+    margin-top: -30px;
   }
 
   .social-icon {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .footer-heading {
