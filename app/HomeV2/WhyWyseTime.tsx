@@ -14,14 +14,14 @@ const WhyChooseWyseTime: React.FC = () => {
             <h2>Why Choose <span className="highlight">WyseTime</span></h2>
             <div className="why-wyse-features">
                 <div className="why-wyse-row">
-                    <div className={` why-wyse-feature ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
+                    <div className="why-wyse-feature">
                         <Image src={easyIntegrationsIcon} alt="Easy Integrations" width={125} height={125} />
                         <div className="feature-text">
                             <h3>Easy Integrations</h3>
                             <p>Easy Installations<br />Deployment Flexibility<br />Continuous Improve</p>
                         </div>
                     </div>
-                    <div className={` why-wyse-feature ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
+                    <div className="why-wyse-feature">
                         <Image src={expertSupportIcon} alt="Expert Support" width={150} height={150} />
                         <div className="feature-text">
                             <h3>Expert Support</h3>
@@ -30,14 +30,14 @@ const WhyChooseWyseTime: React.FC = () => {
                     </div>
                 </div>
                 <div className="why-wyse-row">
-                    <div className={` why-wyse-feature ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
+                    <div className="why-wyse-feature">
                         <Image src={continuouslyImprovedIcon} alt="Continuously Improved" width={150} height={150} />
                         <div className="feature-text">
                             <h3>Continuously Improved</h3>
                             <p>Get your hand on the latest Artificial Intelligence technology without worry, we do it for you.</p>
                         </div>
                     </div>
-                    <div className={` why-wyse-feature ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
+                    <div className="why-wyse-feature">
                         <Image src={flexibleDeploymentIcon} alt="Flexible Deployment" width={150} height={150} />
                         <div className="feature-text">
                             <h3>Flexible Deployment</h3>

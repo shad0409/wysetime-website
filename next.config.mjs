@@ -7,6 +7,12 @@ const nextConfig = {
                 hostname: 'cdn.sanity.io',
                 port: '',
             },
+            {
+                protocol: 'https',
+                hostname: 'wysetimecms.000webhostapp.com',
+                port: '',
+                pathname: '/wp-content/uploads/**',
+            },
         ],
     },
 };

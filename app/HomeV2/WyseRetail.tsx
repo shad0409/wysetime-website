@@ -33,7 +33,7 @@ const WyseRetail = () => {
       <div className="header">
       </div>
       <div className="retail-content">
-        <div className={` retail-right-content ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
+        <div className="retail-right-content">
           <div className="retail-tab-content">
             <Image 
               src={images[selectedTab].src} 
@@ -57,7 +57,7 @@ const WyseRetail = () => {
             </div>
           </div>
         </div>
-        <div className={` retail-left-content ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
+        <div className="retail-left-content">
           <h2>WyseRetail</h2>
           <div className="retail-divider"></div>
           <p>

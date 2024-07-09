@@ -8,7 +8,7 @@ const SecuritySection: React.FC = () => {
 
     return (
         <section className="security-section">
-            <div className={` security-content ${animationInView ? 'fadeInUp' : ''}`} ref={animationRef}>
+            <div className="security-content">
                 <h2 className="security-title">
                     Privacy & Security
                 </h2>

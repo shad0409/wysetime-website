@@ -33,7 +33,7 @@ const WyseSafety = () => {
       <div className="header">
       </div>
       <div className="wyse-product-content">
-        <div className={` left-content ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>
+        <div className="left-content">
           <h2>WyseSafety</h2>
           <div className="divider"></div>
           <p>
@@ -44,7 +44,7 @@ const WyseSafety = () => {
             This solution detects safety protocol breaches, unauthorized access, and improper vehicle use, ensuring a secure and well-regulated environment. Elevate your safety standards with WyseSafety.
           </p>
         </div>
-        <div className={` right-content ${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
+        <div className="right-content">
           <div className="tabs">
             <div className="tab-titles">
               {images.map((image, index) => (

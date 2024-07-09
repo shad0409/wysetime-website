@@ -24,7 +24,7 @@ const IndustriesSection: React.FC = () => {
     return (
         <section className="industries-section">
             <h2 className="section-title">Industries We Serve</h2>
-            <div className={` industries-grid ${animationInView ? 'fadeInUp' : ''}`} ref={animationRef}>
+            <div className="industries-grid">
                 {industries.map((industry, index) => (
                     <div key={index} className="industry-card">
                         <div className="industry-title">{industry.title}</div>

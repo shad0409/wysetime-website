@@ -138,7 +138,7 @@ html {
   z-index: 1000;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1190px) {
   .navbar .hidden.md:block {
     display: none;
   }
@@ -173,7 +173,6 @@ html {
   z-index: 1;
   padding-left: 10em;
   max-width: 40%;
-  animation: fadeInUp 1s ease-in-out; 
   margin-top: 50px;
 }
 
@@ -513,7 +512,6 @@ html {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 100px;
-  animation: fadeInUp 1s ease-in-out; 
 }
 
 .partners-logos {
@@ -521,7 +519,6 @@ html {
   justify-content: center;
   gap: 100px;
   margin-left: 90px;
-  animation: fadeInUp 1s ease-in-out; 
 }
 
 .partner-logo {

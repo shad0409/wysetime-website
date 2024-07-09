@@ -18,6 +18,7 @@ import IndustriesSection from './HomeV2/Industry';
 import WhyChooseWyseTime from './HomeV2/WhyWyseTime';
 import SecuritySection from './HomeV2/Security';
 import Contact from './HomeV2/Contact';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -37,6 +38,7 @@ export default function Home() {
     <>
       <header>
         <HeroWyseTime2 />
+        <Analytics/>
       </header>
       <section>
         <div>
@@ -69,7 +71,7 @@ export default function Home() {
         <div>
           <SecuritySection />
         </div>
-        <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>
+        <div>
           <Contact />
         </div>
       </section>

@@ -1,6 +1,7 @@
 'use client'
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 import Navbar from "./Navbar";
@@ -35,7 +36,9 @@ export default function RootLayout({
         <div className="wrapper">
         <main className="relative min-h-screen">{children}</main>
         </div>
+        <Analytics/>
       </body>
+
     </html>
   );
 }

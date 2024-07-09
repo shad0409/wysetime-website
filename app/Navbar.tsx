@@ -30,12 +30,12 @@ export default function Navbar() {
             <div className='flex items-center'>
               <div className='flex-shrink-0'>
                 <Link href="/" onClick={() => handleLinkClick('/')}>
-                  <Image src={Logo} width={250} height={100} placeholder='blur' alt="logo" />
+                  <Image src={Logo} width={200} height={100} placeholder='blur' alt="logo" />
                 </Link>
               </div>
             </div>
             <div className='hidden lg:flex items-center justify-center'>
-              <div className='ml-4 flex items-center space-x-12'>
+              <div className='ml-4 flex items-center space-x-10'>
                 <a href="/WyseTraffic" 
                   className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseTraffic') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/WyseTraffic')}>
@@ -60,6 +60,11 @@ export default function Navbar() {
                   className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Customization') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/Customization')}>
                   Customization
+                </a>
+                <a href="/Blog" 
+                  className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Blog') ? 'text-red-500' : ''}`}
+                  onClick={() => handleLinkClick('/Blog')}>
+                  Blog
                 </a>
                 <a href="https://portal.wysetime.com" 
                   className={`text-red-500 rounded-lg font-bold text-l ${isActive('https://portal.wysetime.com') ? 'text-red-500' : ''}`}
@@ -134,6 +139,11 @@ export default function Navbar() {
                 className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Customization') ? 'text-red-500' : ''}`}
                 onClick={() => handleLinkClick('/Customization')}>
                 Customization
+              </a>
+              <a href="/Blog" 
+                className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/Blog') ? 'text-red-500' : ''}`}
+                onClick={() => handleLinkClick('/Blog')}>
+                Blog
               </a>
               <a href="https://portal.wysetime.com" 
                   className={`text-red-500 rounded-lg font-bold text-l ${isActive('https://portal.wysetime.com') ? 'text-red-500' : ''}`}

@@ -9,11 +9,11 @@ const Productivity: React.FC = () => {
       <h2>Enhance Your Productivity through <span className="highlight">AI</span></h2>
       <div className="content">
         <div className="features">
-          <div className={` feature ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>Customize Solutions</div>
-          <div className={` feature ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>Various Use Case</div>
-          <div className={` feature ${animationInView ? 'slideInLeft' : ''}`} ref={animationRef}>High Performing AI</div>
+          <div>Customize Solutions</div>
+          <div>Various Use Case</div>
+          <div>High Performing AI</div>
         </div>
-        <p className={`${animationInView ? 'slideInRight' : ''}`} ref={animationRef}>
+        <p>
           Discover the power of AI to build and deploy Intelligent Apps in days. <span className="highlight">WyseTime</span> is a Computer vision platform that makes it easy to train, combine and deploy advanced models to your code.
         </p>
       </div>
