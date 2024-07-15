@@ -48,22 +48,23 @@ const ClientComponent: React.FC<ClientComponentProps> = ({ posts, postsPerPage, 
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
-  const oneWeekAgo = new Date();
-  oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+  const sixtyDaysAgo = new Date();
+  sixtyDaysAgo.setDate(sixtyDaysAgo.getDate() - 60);
 
   const recentPosts = posts.filter(post => {
     const postDate = new Date(post.date);
-    return postDate >= oneWeekAgo;
+    return postDate >= sixtyDaysAgo;
   });
 
-  const archives = posts.reduce<string[]>((acc, post) => {
+  const archives = posts.reduce<Record<string, number>>((acc, post) => {
     const postDate = new Date(post.date);
     const monthYear = `${postDate.toLocaleString('default', { month: 'long' })} ${postDate.getFullYear()}`;
-    if (!acc.includes(monthYear)) {
-      acc.push(monthYear);
+    if (!acc[monthYear]) {
+      acc[monthYear] = 0;
     }
+    acc[monthYear]++;
     return acc;
-  }, []);
+  }, {});
 
   return (
     <div className={styles.blogPage}>
@@ -123,7 +124,7 @@ const ClientComponent: React.FC<ClientComponentProps> = ({ posts, postsPerPage, 
         </div>
         <div className={styles.archives}>
           <h2 className="text-xl font-bold mb-4">Archives</h2>
-          {archives.map(archive => (
+          {Object.entries(archives).map(([archive, count]) => (
             <div
               key={archive}
               className={`${styles.recentPostItem} ${selectedArchive === archive ? styles.activeArchive : ''}`}
@@ -137,7 +138,7 @@ const ClientComponent: React.FC<ClientComponentProps> = ({ posts, postsPerPage, 
               }}
               style={{ cursor: 'pointer' }}
             >
-              <span>{archive}</span>
+              <span>{archive} ({count})</span>
             </div>
           ))}
         </div>

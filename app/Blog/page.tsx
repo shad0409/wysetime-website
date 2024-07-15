@@ -6,24 +6,25 @@ const ClientComponent = dynamic(() => import('./components/blogComponent'), { ss
 
 async function getPosts() {
   const query = `
-  {
-    posts {
-      nodes {
-        id
-        title
-        slug
-        featuredImage {
-          node {
-            id
-            sourceUrl
+    {
+      posts {
+        nodes {
+          id
+          title
+          slug
+          featuredImage {
+            node {
+              id
+              sourceUrl
+            }
           }
+          content(format: RENDERED)
+          excerpt(format: RENDERED)
+          date
         }
-        content(format: RENDERED)
-        excerpt(format: RENDERED)
-        date
       }
     }
-  }`;
+  `;
 
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_WORDPRESS_API_ENDPOINT}?query=${encodeURIComponent(query)}`,
