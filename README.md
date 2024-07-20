@@ -21,8 +21,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Open (https://wysetimecms.000webhostapp.com/wp-admin) with browser
 
 Login in with
-Username/Email : tech_group@wysetime.com
-Password: wyse@123
+1.  Username/Email : tech_group@wysetime.com
+2.  Password: wyse@123
 
 ## Add new posts to Blog
 
