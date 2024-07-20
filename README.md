@@ -18,11 +18,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Content Management System for Blog Pages (Admin Page)
 
-Open (https://wysetimecms.000webhostapp.com/wp-admin) with browser
+Open (cms admin page) with browser
 
 Login in with
-1.  Username/Email : tech_group@wysetime.com
-2.  Password: wyse@123
+1.  Username/Email : ...
+2.  Password: ...
 
 ## Add new posts to Blog
 
