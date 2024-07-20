@@ -1,4 +1,4 @@
-WyseTime Website Documentation
+## WyseTime Website Documentation
 
 ## Getting Started
 
