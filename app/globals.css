@@ -255,6 +255,38 @@ html {
 }
 
 /* Media Queries */
+@media (max-width: 1270px) {
+  .hero-content {
+    padding-left: 2em; 
+    max-width: 65%; 
+  }
+
+  .hero-content h1 {
+    font-size: 36px; 
+    margin-top: 20px; 
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-button-link {
+    padding: 8px 16px; 
+    font-size: 14px;
+  }
+
+  .hero-image-container {
+    padding: 80px;
+  }
+
+  .hero-arrow {
+    padding: 10px; 
+  }
+
+  .hero-image {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
 
 /* Large screens */
 @media (max-width: 1920px) {
@@ -343,7 +375,7 @@ html {
   }
 
   .hero-content p {
-    font-size: 1rem; /* Ensure readability */
+    font-size: 2rem; /* Ensure readability */
   }
 
   .hero-button-link {
@@ -946,6 +978,42 @@ html {
 
 /* Media Queries */
 
+/* 2560 x 1440 zoom in 200% */
+
+@media (max-width: 1270px) {
+  .section {
+    height: auto;
+    padding: 15px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .features {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .feature {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .section p {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
 /* Large screens */
 @media (max-width: 1920px) {
   .section h2 {
@@ -1233,6 +1301,49 @@ html {
 
 /* Media Queries for WyseTraffic, WyseRetail, WyseSafety */
 
+/* 2560 x 1440 with 200% */
+@media (max-width: 1270px) {
+  .wyse-traffic, .wyse-retail, .wyse-safety {
+    height: auto;
+    padding: 40px;
+  }
+
+  .wyse-traffic h1, .wyse-traffic h2,
+  .wyse-retail h1, .wyse-retail h2,
+  .wyse-safety h1, .wyse-safety h2 {
+    font-size: 18px;
+  }
+
+  .wyse-traffic p, .wyse-retail p, .wyse-safety p {
+    font-size: 16px;
+  }
+
+  .tab-content, .retail-tab-content {
+    height: 240px;
+    width: 20%;
+  }
+
+  .tab-title, .retail-tab-title {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .retail-content, .wyse-product-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .right-content, .retail-right-content {
+    width: 40%;
+  }
+
+  .retail-left-content, .left-content {
+    width: 60%;
+    padding: 20px;
+  }
+}
+
+
 /* Large screens */
 @media (max-width: 1920px) {
   .wyse-traffic h1, .wyse-traffic h2,
@@ -1513,7 +1624,6 @@ html {
 }
 
 /* Media Queries */
-
 /* Large screens */
 @media (max-width: 1920px) {
   .dashboard-title {
@@ -1541,7 +1651,7 @@ html {
 
 @media (max-width: 1536px) {
   .dashboard-section {
-    height: 80vh;
+    height: 95vh;
   }
 
   .dashboard-title {
@@ -1602,6 +1712,37 @@ html {
     width: 100%;
   }
 }
+
+/* Media Queries for screen size of 1270px */
+@media (max-width: 1270px) {
+  .dashboard-title {
+    font-size: 22px;
+    margin-bottom: 80px;
+    margin-top: -40px;
+  }
+
+  .dashboard-content h3 {
+    font-size: 20px;
+  }
+
+  .dashboard-content h1 {
+    font-size: 52px;
+  }
+
+  .dashboard-content p {
+    font-size: 18px;
+  }
+
+  .dashboard-button-link {
+    font-size: 12px;
+  }
+
+  .dashboard-image-container {
+    height: 400px;
+    width: 60%;
+  }
+}
+
 
 /* Small screens */
 @media (max-width: 1024px) {
@@ -1803,7 +1944,7 @@ html {
 
 @media (max-width: 1536px) {
   .industries-section {
-    height: 80vh;
+    height: 85vh;
   }
 
   .section-title {
@@ -1828,7 +1969,7 @@ html {
   }
 
   .image-container {
-    height: 150px;
+    height: 170px;
   }
 }
 
@@ -1852,6 +1993,37 @@ html {
 
   .image-container {
     height: 300px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .industries-section {
+    height: 95vh;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: -40px;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .industry-title {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .industry-card {
+    width: 100%; /* Adjust width to ensure cards are closer */
+    max-width: 300px; /* Ensure max-width for better layout */
+  }
+
+  .image-container {
+    height: 170px;
   }
 }
 
@@ -2018,7 +2190,7 @@ html {
   }
 
   .why-wyse-feature {
-    width: 400px;
+    width: 500px;
   }
 
   .feature-text h3 {
@@ -2053,6 +2225,36 @@ html {
     font-size: 14px;
   }
 }
+
+/* Custom media query for max-width: 1270px */
+@media (max-width: 1270px) {
+  .why-wyse-container {
+    padding: 35px 18px;
+  }
+
+  .why-wyse-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .why-wyse-row {
+    gap: 70px;
+  }
+
+  .why-wyse-feature {
+    width: 550px;
+    padding: 18px;
+  }
+
+  .feature-text h3 {
+    font-size: 18px;
+  }
+
+  .feature-text p {
+    font-size: 14px;
+  }
+}
+
 
 /* Small screens */
 @media (max-width: 1024px) {
@@ -2279,6 +2481,41 @@ html {
     margin-right: 100px;
   }
 }
+
+/* Custom media query for max-width: 1270px */
+@media (max-width: 1270px) {
+  .security-section {
+    padding: 1rem;
+    height: auto; 
+  }
+
+  .security-content {
+    max-width: 30%;
+  }
+
+  .security-content h2 {
+    font-size: 24px;
+  }
+
+  .security-title {
+    font-size: 0.5rem;
+  }
+
+  .security-content h1 {
+    font-size: 48px;
+  }
+
+  .security-content p {
+    font-size: 12px;
+  }
+
+  .security-image-container {
+    width: 45%;
+    height: 350px; 
+    margin-right: 75px; 
+  }
+}
+
 
 /* Small screens */
 @media (max-width: 1024px) {
@@ -2563,6 +2800,40 @@ html {
   }
 }
 
+/* Custom media query for max-width: 1270px */
+@media (max-width: 1270px) {
+  .contact-section,
+  .contact-section-individual {
+    height: 95vh; 
+    padding: 1.8rem; 
+  }
+
+  .contact-info {
+    max-width: 25%;
+  }
+
+  .contact-info h2 {
+    font-size: 24px;
+  }
+
+  .contact-info h3 {
+    font-size: 20px;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .contact-form-container {
+    max-width: 45%;
+  }
+
+  .submit-button {
+    padding: 8px 16px; /* Adjusted padding */
+    max-width: 130px;
+  }
+}
+
 /* Small screens */
 @media (max-width: 1024px) {
   .contact-section, .contact-section-individual {
@@ -2831,6 +3102,58 @@ html {
     font-size: 12px;
   }
 }
+
+/* Custom media query for max-width: 1270px */
+@media (max-width: 1270px) {
+  .footer-container {
+    padding: 15px 0; 
+    height: auto; 
+  }
+
+  .footer-content {
+    width: 80%; 
+    flex-direction: row; 
+    align-items: flex-start;
+  }
+
+  .footer-logo-social {
+    margin-right: 20px; 
+  }
+
+  .footer-logo {
+    height: 60px;
+    margin-right: 20px; 
+  }
+
+  .social-icons {
+    margin-bottom: 10px;
+    gap: 15px; 
+  }
+
+  .footer-heading {
+    font-size: 18px; 
+  }
+
+  .footer-list li {
+    font-size: 14px; 
+  }
+
+  .address, .copyright {
+    font-size: 12px; 
+    margin-right: 20px; 
+  }
+
+  .footer-links {
+    width: 50%; 
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    margin-top: 20px; 
+  }
+}
+
 
 /* Small screens */
 @media (max-width: 1024px) {
@@ -3176,6 +3499,47 @@ html {
   }
 }
 
+/* Media Query for max-width: 1270px */
+@media (max-width: 1270px) {
+  .info-section {
+    height: 45vh;
+  }
+
+  .info-title {
+    font-size: 26px;
+  }
+
+  .info-description {
+    font-size: 16px;
+  }
+
+  .info-button-link {
+    font-size: 16px;
+  }
+
+  .product-left-section,
+  .product-right-section {
+    padding: 70px;
+  }
+
+  .product-left-content,
+  .product-right-content {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .product-left-title,
+  .product-right-title {
+    font-size: 26px;
+  }
+
+  .product-left-description,
+  .product-right-description {
+    font-size: 18px;
+  }
+}
+
+
 /* Small screens */
 @media (max-width: 1024px) {
   .product-left-section {
@@ -3511,6 +3875,51 @@ html {
     margin-right: 300px;
   }
 }
+
+/* Media Query for max-width: 1270px */
+@media (max-width: 1270px) {
+  .customization-section {
+    padding: 1.5rem;
+    height: auto; /* Adjust height for better responsiveness */
+  }
+
+  .customization-content {
+    max-width: 50%; /* Adjust width for medium screens */
+    margin-left: 100px;
+  }
+
+  .customization-content h2 {
+    font-size: 28px;
+  }
+
+  .customization-title {
+    font-size: 1.25rem;
+  }
+
+  .customization-content h1 {
+    font-size: 56px;
+  }
+
+  .customization-content p {
+    font-size: 0.9rem;
+  }
+
+  .customization-image-container {
+    width: 25%;
+    height: 60vh; /* Adjust height to maintain aspect ratio */
+    margin-right: 150px;
+
+  }
+
+  .customization-industry-section {
+    gap: 50px; /* Adjust gap between items */
+  }
+
+  .customization-industry-item p {
+    font-size: 18px;
+  }
+}
+
 
 /* Small screens */
 @media (max-width: 1024px) {

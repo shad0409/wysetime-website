@@ -22,7 +22,7 @@ const WhyChooseWyseTime: React.FC = () => {
                         </div>
                     </div>
                     <div className="why-wyse-feature">
-                        <Image src={expertSupportIcon} alt="Expert Support" width={150} height={150} />
+                        <Image src={expertSupportIcon} alt="Expert Support" width={125} height={125} />
                         <div className="feature-text">
                             <h3>Expert Support</h3>
                             <p>Our team are highly specialized in the industry and matters they are dealing with.</p>
@@ -31,14 +31,14 @@ const WhyChooseWyseTime: React.FC = () => {
                 </div>
                 <div className="why-wyse-row">
                     <div className="why-wyse-feature">
-                        <Image src={continuouslyImprovedIcon} alt="Continuously Improved" width={150} height={150} />
+                        <Image src={continuouslyImprovedIcon} alt="Continuously Improved" width={175} height={175} />
                         <div className="feature-text">
                             <h3>Continuously Improved</h3>
                             <p>Get your hand on the latest Artificial Intelligence technology without worry, we do it for you.</p>
                         </div>
                     </div>
                     <div className="why-wyse-feature">
-                        <Image src={flexibleDeploymentIcon} alt="Flexible Deployment" width={150} height={150} />
+                        <Image src={flexibleDeploymentIcon} alt="Flexible Deployment" width={140} height={140} />
                         <div className="feature-text">
                             <h3>Flexible Deployment</h3>
                             <p>Our platform is adaptable to several camera types and brands. No need to change or replace your CCTV, as long as it meets our minimum specifications.</p>
