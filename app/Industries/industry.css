@@ -1,0 +1,334 @@
+/* Products Info Page */
+.info-section {
+    background-color: rgba(230, 230, 230, 0.5);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+  
+.info-content {
+    max-width: 1800px; /* Adjust the max-width as needed */
+    text-align: left; /* Align text to the left */
+  }
+  
+.info-title {
+    color: #d82020; /* #ED1B24 color for the title */
+    font-size: 32px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+.info-description {
+    color: #333333; /* Dark gray color for the description */
+    font-size: 18px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+  }
+  
+.info-button-link {
+    display: inline-block;
+    background-color: #d82020; /* #ED1B24 background for the button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
+.info-button-link:hover {
+    background-color: #b71c1c; /* Darker #ED1B24 when hover */
+  }
+  
+  /* Media Query for max-width: 1270px */
+  @media (max-width: 1270px) {
+    .info-section {
+      height: auto;
+    }
+  
+    .info-title {
+      font-size: 26px;
+    }
+  
+    .info-description {
+      font-size: 16px;
+    }
+  
+    .info-button-link {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .info-title {
+      color: #d82020; /* #ED1B24 color for the title */
+      font-size: 24px; /* Adjust font size as needed */
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .info-description {
+      color: #333333; /* Dark gray color for the description */
+      font-size: 16px; /* Adjust font size as needed */
+      margin-bottom: 20px;
+    }
+    
+    .info-button-link {
+      display: inline-block;
+      background-color: #d82020; /* #ED1B24 background for the button */
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px; /* Adjust font size as needed */
+    }
+}
+
+/* Industries */
+.industries-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding: 20px;
+background-color: rgba(230, 230, 230, 0.5);
+height: auto;
+}
+
+.industries-section-individual {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+padding: 20px;
+height: auto;
+}
+
+.section-title {
+font-size: 32px;
+font-weight: 600;
+margin-bottom: 50px;
+}
+
+.industries-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Ensure the columns take up equal space */
+gap: 20px; /* #ED1B24uced the gap */
+justify-items: center;
+}
+
+.industry-card {
+width: 100%; /* Adjust width to ensure cards are closer */
+max-width: 400px; /* Ensure max-width for better layout */
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.industry-title {
+background-color: #ED1B24;
+color: white;
+font-size: 24px;
+padding: 20px;
+text-align: center;
+width: 100%;
+}
+
+.image-container {
+position: relative;
+width: 100%;
+height: 300px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1536px) {
+.industries-section {
+    height: 85vh;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: -40px;
+}
+
+.industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.industry-title {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.industry-card {
+    width: 100%; /* Adjust width to ensure cards are closer */
+    max-width: 300px; /* Ensure max-width for better layout */
+}
+
+.image-container {
+    height: 170px;
+}
+}
+
+/* Medium screens */
+@media (max-width: 1440px) {
+.section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
+.industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.industry-title {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.image-container {
+    height: 300px;
+}
+}
+
+@media (max-width: 1366px) {
+.industries-section {
+    height: auto;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.industry-title {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.industry-card {
+    width: 100%; /* Adjust width to ensure cards are closer */
+    max-width: 300px; /* Ensure max-width for better layout */
+}
+
+.image-container {
+    height: 170px;
+}
+}
+
+@media (max-width: 1270px) {
+.industries-section {
+    height: 95vh;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.industry-title {
+    font-size: 16px;
+    padding: 15px;
+}
+
+.industry-card {
+    width: 100%; /* Adjust width to ensure cards are closer */
+    max-width: 300px; /* Ensure max-width for better layout */
+}
+
+.image-container {
+    height: 170px;
+}
+}
+
+/* Small screens */
+@media (max-width: 1024px) {
+.industries-section, .industries-section-individual {
+    height: 80vh;
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.industries-grid {
+    grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+    gap: 10px;
+}
+
+.industry-title {
+    font-size: 18px;
+    padding: 8px;
+}
+
+.image-container {
+    height: 220px;
+}
+}
+
+/* Extra small screens */
+@media (max-width: 768px) {
+.industries-section, .industries-section-individual {
+    height: auto;
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+.industries-grid {
+    grid-template-columns: repeat(1, 1fr); /* Change to 3 columns */
+    gap: 10px;
+}
+
+.industry-title {
+    font-size: 16px;
+    padding: 6px;
+}
+
+.image-container {
+    height: 150px;
+}
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+.section-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.industry-title {
+    font-size: 14px;
+    padding: 4px;
+}
+
+.image-container {
+    height: 120px;
+}
+}

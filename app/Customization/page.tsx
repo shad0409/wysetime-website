@@ -3,6 +3,7 @@ import { getProjects } from '@/sanity/sanity-utils'
 import { useInView } from 'react-intersection-observer';
 
 import "../globals.css";
+import "./customization.css";
 import Footer from '../Footer';
 import Custom from './components/Info';
 import Section from './components/Sector';
@@ -16,16 +17,16 @@ export default function Home() {
 
   return (
     <>
-      <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
+      <header>
       </header>
       <section>
-        <div className={` ${customInView ? 'fadeInUp' : ''}`} ref={customRef}>
+        <div>
           <Custom />
         </div>
-        <div className={` ${sectionInView ? 'fadeInUp' : ''}`} ref={sectionRef}>
+        <div>
           <Section />
         </div>
-        <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>
+        <div>
           <Contact />
         </div>
       </section>

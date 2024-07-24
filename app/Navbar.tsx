@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
@@ -23,8 +23,8 @@ export default function Navbar() {
   };
 
   return (
-    <div>
-      <nav className='navbar bg-gray-300'>
+    <>
+      <nav className='navbar bg-gray-300 fixed w-full top-0 z-50'>
         <div className='max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 h-20'>
           <div className='flex items-center justify-between h-full'>
             <div className='flex items-center'>
@@ -35,7 +35,7 @@ export default function Navbar() {
               </div>
             </div>
             <div className='hidden lg:flex items-center justify-center'>
-              <div className='ml-4 flex items-center space-x-10'>
+              <div className='ml-4 flex items-center space-x-12'>
                 <a href="/WyseTraffic" 
                   className={`text-black hover:text-red-500 rounded-lg font-bold text-l ${isActive('/WyseTraffic') ? 'text-red-500' : ''}`}
                   onClick={() => handleLinkClick('/WyseTraffic')}>
@@ -159,6 +159,7 @@ export default function Navbar() {
           </div>
         )}
       </nav>
-    </div>
+      <div className='h-20'></div> {/* This div adds space equal to the navbar height */}
+    </>
   )
 }

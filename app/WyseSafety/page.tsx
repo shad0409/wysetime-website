@@ -3,6 +3,7 @@ import { getProjects } from '@/sanity/sanity-utils'
 import { useInView } from 'react-intersection-observer';
 
 import "../globals.css";
+import "./products.css";
 import Footer from '../Footer';
 import Info from './components/Info';
 import PPEDetection from './components/PPE';
@@ -27,7 +28,7 @@ export default function Home() {
       <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
       </header>
       <section>
-        <div className={` ${infoInView ? 'fadeInUp' : ''}`} ref={infoRef}>
+        <div>
           <Info />
         </div>
         <div className={` ${ppeInView ? 'fadeInUp' : ''}`} ref={ppeRef}>

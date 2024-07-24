@@ -2,7 +2,8 @@
 import { getProjects } from '@/sanity/sanity-utils'
 import { useInView } from 'react-intersection-observer';
 
-import "../globals.css";
+import "./industry.css";
+import "../globals.css"
 import Footer from '../Footer';
 import Info from './components/Info';
 import IndustriesSection from './components/Industry';
@@ -16,16 +17,16 @@ export default function Home() {
 
   return (
     <>
-      <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
+      <header>
       </header>
       <section>
-        <div className={` ${infoInView ? 'fadeInUp' : ''}`} ref={infoRef}>
+        <div>
           <Info />
         </div>
-        <div className={` ${industriesSectionInView ? 'fadeInUp' : ''}`} ref={industriesSectionRef}>
+        <div>
           <IndustriesSection />
         </div>
-        <div className={` ${contactInView ? 'fadeInUp' : ''}`} ref={contactRef}>
+        <div>
           <Contact />
         </div>
       </section>

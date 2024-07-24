@@ -6,18 +6,18 @@ import "./globals.css";
 
 // Individual Components
 import Footer from './Footer';
-import HeroWyseTime2 from './HomeV2/Hero';
-import Partners from './HomeV2/Partners';
-import HowItWorks from './HomeV2/Info';
-import Productivity from './HomeV2/Productivity';
-import WyseTraffic from './HomeV2/WyseTraffic';
-import WyseRetail from './HomeV2/WyseRetail';
-import WyseSafety from './HomeV2/WyseSafety';
-import DashboardSection from './HomeV2/Dashboard';
-import IndustriesSection from './HomeV2/Industry';
-import WhyChooseWyseTime from './HomeV2/WhyWyseTime';
-import SecuritySection from './HomeV2/Security';
-import Contact from './HomeV2/Contact';
+import HeroWyseTime2 from './Home/Hero';
+import Partners from './Home/Partners';
+import HowItWorks from './Home/Info';
+import Productivity from './Home/Productivity';
+import WyseTraffic from './Home/WyseTraffic';
+import WyseRetail from './Home/WyseRetail';
+import WyseSafety from './Home/WyseSafety';
+import DashboardSection from './Home/Dashboard';
+import IndustriesSection from './Home/Industry';
+import WhyChooseWyseTime from './Home/WhyWyseTime';
+import SecuritySection from './Home/Security';
+import Contact from './Home/Contact';
 import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {

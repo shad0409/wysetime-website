@@ -4,12 +4,8 @@ import { useInView } from 'react-intersection-observer';
 
 import "../globals.css";
 
-// Individual Components
-import ContactHeader from './components/Hero';
-import ContactInfo from './components/Info';
-
 import Footer from '../Footer';
-import Contact from '../HomeV2/Contact';
+import Contact from './components/Contact';
 
 export default function Home() {
   const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -17,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <header ref={heroRef} className={heroInView ? 'fadeInUp' : ''}>
+      <header>
         <Contact />
       </header>
       <footer className=''>

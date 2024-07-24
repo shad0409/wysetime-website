@@ -4,6 +4,7 @@ import Image from 'next/image';
 import wyseTimeLogo from '../../../public/WyseLogo.png';
 import emailIcon from '../../../public/whatsapp-black.jpg';
 import phoneIcon from '../../../public/EmailIcon-removebg-preview.png';
+import '../../globals.css'
 
 const Contact = () => {
     const [state, handleSubmit] = useForm("xrgnjppv");
@@ -19,7 +20,7 @@ const Contact = () => {
     };
   
     return (
-      <div className="contact-section-individual">
+      <div className="contact-section-main">
         <div className="contact-info">
           <Image src={wyseTimeLogo} alt="WyseTime Logo" className="wysetime-logo" />
           <h2>Contact Us</h2>

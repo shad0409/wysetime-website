@@ -6,14 +6,13 @@
 .header h1 {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 50px;
 }
 
 .blogPage {
   display: flex;
   gap: 16px;
-  width: 80%;
-  margin-left: 200px;
+  width: 90%;
+  margin-left: 100px;
 }
 
 .leftColumn {
@@ -23,7 +22,8 @@
 
 .rightColumn {
   flex: 1;
-  margin-right: -100px;
+  padding-left: 50px;
+  margin-right: -150px;
 }
 
 .container {
@@ -149,14 +149,6 @@
 }
 
 /* Media Queries */
-
-/* Large screens */
-@media (max-width: 1920px) {
-  .blogPage {
-    width: 80%;
-    margin-left: 120px;
-  }
-}
 
 /* Zoomed in to 125% screens */
 @media (max-width: 1536px) {

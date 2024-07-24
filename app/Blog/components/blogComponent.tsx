@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../blog.module.css';
-import Contact from '@/app/HomeV2/Contact';
+import Contact from '@/app/Home/Contact';
 
 interface Post {
   id: string;
