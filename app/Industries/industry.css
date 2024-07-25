@@ -146,14 +146,8 @@ height: 300px;
 /* Media Queries */
 
 @media (max-width: 1536px) {
-.industries-section {
-    height: 85vh;
-}
-
 .section-title {
-    font-size: 24px;
-    margin-bottom: 40px;
-    margin-top: -40px;
+    font-size: 30px;
 }
 
 .industries-grid {
@@ -261,15 +255,8 @@ height: 300px;
 
 /* Small screens */
 @media (max-width: 1024px) {
-.industries-section, .industries-section-individual {
-    height: 80vh;
-    padding: 15px;
-}
-
 .section-title {
     font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: -20px;
 }
 
 .industries-grid {
@@ -295,18 +282,16 @@ height: 300px;
 }
 
 .section-title {
-    font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: -15px;
+    font-size: 20px;
 }
 
 .industries-grid {
-    grid-template-columns: repeat(1, 1fr); /* Change to 3 columns */
+    grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
     gap: 10px;
 }
 
 .industry-title {
-    font-size: 16px;
+    font-size: 14px;
     padding: 6px;
 }
 

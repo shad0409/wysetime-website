@@ -194,7 +194,7 @@
 }
 
 /* Medium screens */
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
   .heroContent {
     padding: 20px;
     width: 90%;
@@ -324,16 +324,12 @@
 
 /* Mobile screens */
 @media (max-width: 480px) {
-  .heroContent {
-    padding: 5px;
-  }
-
   .heroTitle {
-    font-size: 1.2em;
+    font-size: 16px;
   }
 
   .heroExcerpt {
-    font-size: 0.7em;
+    font-size: 10px;
     padding: 4px;
   }
 
@@ -367,16 +363,12 @@
 
 /* Extra small mobile screens */
 @media (max-width: 380px) {
-  .heroContent {
-    padding: 2px;
-  }
-
   .heroTitle {
-    font-size: 0.6em;
+    font-size: 12px;
   }
 
   .heroExcerpt {
-    font-size: 0.3em;
+    font-size: 8px;
     padding: 3px;
   }
 
@@ -389,14 +381,14 @@
   }
 
   .postContent h2 {
-    font-size: 0.9em;
+    font-size: 16px;
   }
 
   .postContent p {
-    font-size: 0.5em;
+    font-size: 12px;
   }
 
   .postContent img {
-    max-width: 35%;
+    max-width: 70%;
   }
 }

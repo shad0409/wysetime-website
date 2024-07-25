@@ -80,7 +80,7 @@
     }
   
     .customization-content h2 {
-      font-size: 24px;
+      font-size: 30px;
     }
   
     .customization-title {
@@ -92,13 +92,11 @@
     }
   
     .customization-content p {
-      font-size: 12px;
+      font-size: 20px;
     }
   
     .customization-image-container {
-      height: 400px;
-      margin-right: 300px;
-      margin-top: 150px;
+      height: 350px;
     }
   
     .customization-industry-section {
@@ -131,17 +129,18 @@
   }
   
   /* Medium screens and above */
-  @media (max-width: 1440px) {
+  @media (max-width: 1366px) {
     .customization-section {
-      padding: 1.5rem;
+      padding: 1rem;
+      height: auto;
     }
   
     .customization-content {
-      margin-left: 150px;
+      margin-left: 100px;
     }
   
     .customization-content h2 {
-      font-size: 28px;
+      font-size: 24px;
     }
   
     .customization-title {
@@ -149,25 +148,20 @@
     }
   
     .customization-content h1 {
-      font-size: 72px;
+      font-size: 60px;
     }
   
     .customization-content p {
-      font-size: 0.9rem;
+      font-size: 20px;
     }
   
     .customization-image-container {
-      height: 400px;
-      margin-right: 300px;
+      height: 350px;
+      margin-right: 100px;
     }
   }
-  
-  /* Media Query for max-width: 1270px */
-  @media (max-width: 1270px) {
-    .customization-section {
-      padding: 1.5rem;
-      height: auto; /* Adjust height for better responsiveness */
-    }
+
+  @media (max-width: 1280px) {
   
     .customization-content {
       max-width: 50%; /* Adjust width for medium screens */
@@ -175,7 +169,7 @@
     }
   
     .customization-content h2 {
-      font-size: 28px;
+      font-size: 24px;
     }
   
     .customization-title {
@@ -183,17 +177,17 @@
     }
   
     .customization-content h1 {
-      font-size: 56px;
+      font-size: 50px;
     }
   
     .customization-content p {
-      font-size: 0.9rem;
+      font-size: 16px;
     }
   
     .customization-image-container {
       width: 25%;
-      height: 60vh; /* Adjust height to maintain aspect ratio */
-      margin-right: 150px;
+      height: 350px; /* Adjust height to maintain aspect ratio */
+      margin-right: 100px;
   
     }
   
@@ -209,11 +203,6 @@
   
   /* Small screens */
   @media (max-width: 1024px) {
-    .customization-section {
-      flex-direction: row;
-      height: 50vh;
-      padding: 1rem;
-    }
   
     .customization-content {
       max-width: 70%;
@@ -221,7 +210,7 @@
     }
   
     .customization-content h2 {
-      font-size: 24px;
+      font-size: 20px;
     }
   
     .customization-title {
@@ -233,12 +222,12 @@
     }
   
     .customization-content p {
-      font-size: 0.8rem;
+      font-size: 16px;
     }
   
     .customization-image-container {
-      width: 60%;
-      height: 250px;
+      width: 40%;
+      height: 300px;
       margin: 20px 0;
     }
   
@@ -309,15 +298,19 @@
     }
   
     .customization-content h1 {
-      font-size: 36px;
+      font-size: 24px;
+      width: 400px;
     }
   
     .customization-content p {
-      font-size: 0.6rem;
+      font-size: 12px;
+      width: 200px;
     }
   
     .customization-image-container {
       height: 100px;
+      width: 300px;
+      margin-top: 100px;
     }
   
     .customization-industry-item img {
@@ -332,8 +325,7 @@
   
   @media (max-width: 380px) {
     .customization-content h2 {
-      font-size: 12px;
-      margin-top: 50px;
+      font-size: 16px;
     }
   
     .customization-title {
@@ -341,11 +333,11 @@
     }
   
     .customization-content h1 {
-      font-size: 20px;
+      font-size: 24px;
     }
   
     .customization-content p {
-      font-size: 10px;
+      font-size: 12px;
     }
   
     .customization-image-container {

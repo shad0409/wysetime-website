@@ -21,19 +21,6 @@ import Contact from './Home/Contact';
 import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
-  const [heroRef, heroInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [aboutRef, aboutInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [servicesRef, servicesInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [productivityRef, productivityInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [wyseTrafficRef, wyseTrafficInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [wyseRetailRef, wyseRetailInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [wyseSafetyRef, wyseSafetyInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [dashboardSectionRef, dashboardSectionInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [industriesSectionRef, industriesSectionInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [whyChooseWyseTimeRef, whyChooseWyseTimeInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [securitySectionRef, securitySectionInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [contactRef, contactInView] = useInView({ triggerOnce: true, threshold: 0.1 });
-
   return (
     <>
       <header>
