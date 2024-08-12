@@ -9,9 +9,9 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'wysewebcms.x10.mx/wp',
+                hostname: 'wysewebcms.x10.mx',
                 port: '',
-                pathname: '/wp-content/uploads/**',
+                pathname: '/wp/wp-content/uploads/**',
             },
         ],
     },
